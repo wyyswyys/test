@@ -1,0 +1,56 @@
+gsk_leader_koishi.png 89893322 ののこ
+gsk_leader_suwako.png 113709589 ののこ
+gsk_main_event.60.png 84590331 ののこ
+gsk_main_event.80.png 89956876 ののこ
+gsk_leader_aya.png 101648833 mutugi
+gsk_leader_sanae.png 98765241 mutugi
+gsk_leader_youmu.png 106842112 mutugi
+gsk_leader_yuyuko.png 124485650 mutugi
+gsk_leader_keine.png 65697785 鏡 Area
+gsk_leader_yagokoro.png 49697676 鏡 Area
+gsk_leader_kogasa.png 108316424 楽澪
+gsk_leader_tenshi.png 108482863 楽澪
+gsk_leader_reimu.png 116387153 紫あつし
+gsk_leader_remilia.png 112350925 紫あつし
+gsk_leader_sakuya.png 111047763 久蒼穹
+gsk_hire_event.34.png 114257031 久蒼穹
+gsk_leader_flandre.png 107729631 くれ〜ぷ
+gsk_leader_satori.png 88078117 くれ〜ぷ
+gsk_leader_patchouli.png 90210496 ぷりん
+gsk_leader_reisen.dds 81703594 ぷりん
+gsk_leader_tewi.dds 32227729 鳥居すみ
+gsk_leader_akyuu.png 114384607 AL光
+gsk_leader_alice.png 101268296 みえはる
+gsk_leader_cirno.png 114368599 亜羽瀬ひの＠お仕事募集中
+gsk_leader_kaguya.png 108744754 RedcXca
+gsk_leader_kanako.png 84296523 むぢむぢ(Mudix2)
+gsk_leader_kokoro.png 79803247 Bison倉鼠
+gsk_leader_marisa.png 110233925 にゃんあや
+gsk_leader_yuka.png 101560824 Orchid - オルキド
+gsk_leader_yukari.png 54655598 蒼咲ゆきな＠2日目東ス84a
+gsk_leader_shikieiki.dds 128975497 安德小骸
+gsk_leader_renko.dds 59422378 Lumo_1121
+gsk_leader_hearn.dds 105630711 蟻丼
+gsk_leader_seiran.dds 124455564 ルナルナ
+gsk_leader_ringo.dds  56703160 りひと
+gsk_leader_doremy.dds  人妖名鉴
+gsk_leader_sagume.dds 100221378 Misekiss@C105
+gsk_leader_clownpiece.dds 100682820 ナンコツ
+gsk_leader_junko.dds  98988172 木村棗
+gsk_leader_hecatia.dds  118907466 だいわごりら
+gsk_hire_event.33.png 9851575 ふぐの
+gsk_hire_event.71.png 106827537 Munchem-慕尼
+gsk_hire_event.72.png 93204135 柏森たま。
+gsk_hire_event.122.png 52174229 鼓湖
+gsk_hire_event.121.png 50365040 ひよすけ
+gsk_main.png 53031871 oO大黄Oo
+gsk_main_event.2.png 66231473 ソメイよしのり
+gsk_main_event.21.png 95363719 黄瓜
+gsk_main_event.30.png 117562105 huaano
+gsk_main_event.40.png 53868539 ZYANNA
+gsk_main_event.50.png 115738183 あをによし
+gsk_main_event.70.png 113808490 雪屋ナギ
+gsk_main_event.90.png 117947311 とり丸
+gsk_decision_bg.png 74097177 きさらぎゆり
+以及steam游戏 东方夜雀食堂的表情包
+thwiki的Q版人物模型
