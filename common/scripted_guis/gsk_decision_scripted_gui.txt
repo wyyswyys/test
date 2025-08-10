@@ -1,0 +1,27 @@
+scripted_gui = {
+	gsk_decision_scripted_gui = {
+		context_type = decision_category
+		window_name = "gsk_decision_ui_window"
+		parent_window_token = decision_tab
+
+		effects = {
+			gsk_help_button_click = {
+				country_event = gsk_main_event.2
+			}
+			gsk_show_mio_button_click = {
+				country_event = gsk_main_event.22
+			}
+			gsk_change_secretary_button_click = {
+				if = {
+					limit = {
+						has_country_flag = gsk_choose_leaders_scripted_gui_show_flag
+					}
+					clr_country_flag = gsk_choose_leaders_scripted_gui_show_flag
+				}
+				else = {
+					set_country_flag = gsk_choose_leaders_scripted_gui_show_flag
+				}
+			}
+		}
+	}
+}

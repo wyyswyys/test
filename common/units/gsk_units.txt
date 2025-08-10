@@ -1,0 +1,117 @@
+sub_units = {
+    gsk_infantry_frog = {
+        sprite = infantry # Refers to <name>_entity in a gfx/entities/.*.asset file - Controls the unit used on the map
+        abbreviation = "FROG"
+        # Controls the map icon category used for the unit
+        map_icon_category = infantry
+
+        priority = 0    # Controls which icon is used if multiple subunits of the same type exist
+        ai_priority = 0
+
+        active = yes       # Whether the unit is usable without explicit unlocking in technology
+        cavalry = no           # Used to define subunit as cavalry 
+        special_forces = no    # Used to define subunit as special forces
+        marines = no           # Used to define subunit as marine
+        mountaineers = no      # Used to define subunit as mountaineers
+        can_be_parachuted = yes # Used to define subunit as paratroopers.
+        affects_speed = no     # Used to check if the unit will affect the template's speed, support companies have it set to no.
+
+        #transport = <equipment> # Sets the speed of subunit via equipment. Used for motorized/mechanized
+        
+        # How the unit is grouped division-wise, i.e. appearing in the Support tab. Not used for air or naval units
+        group = support
+        
+        # Internal types
+        type = {
+            support
+        }
+        
+        # Categories the unit belongs to.
+        categories = {
+            category_army
+			category_front_line
+			category_support_battalions
+        }
+        
+        # Equipment that is required for this unit. Used when active = no
+        essential = {
+            gsk_equipment_frog0
+        }
+        
+        # Equipment needed to produce this unit. Unit won't be available until the nation has this equipment
+        need = {
+            gsk_equipment_frog0 = 25
+        }
+        
+        # Modifiers control the stats of the unit. More detail under the Stats section.
+        max_organisation = 30
+		default_morale = 0.3
+        
+        # Modifiers that occur only in specific terrain
+        forest = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+
+		hills = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+
+		plains = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+
+		urban = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+
+		fort = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+
+		river = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+
+		amphibious = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.02
+		}
+    }
+}

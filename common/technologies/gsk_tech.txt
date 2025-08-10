@@ -1,0 +1,29 @@
+technologies = {
+
+	gsk_equipment_frog_eq_tech = {
+
+		enable_equipments = {
+			gsk_equipment_frog0
+		}
+		
+		research_cost = 1
+		start_year = 1918
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	gsk_equipment_houraisan_med_tech = {
+
+		enable_equipments = {
+			gsk_equipment_houraisan_med0
+		}
+		
+		research_cost = 1
+		start_year = 1918
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

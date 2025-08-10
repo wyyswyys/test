@@ -1,0 +1,2636 @@
+gsk_recruit_character_interaction = {
+	# gsk_recruit_character_interaction_vis = {
+	# 	priority = 301
+	# 	allowed = {
+	# 	}
+	# 	available = {
+	# 	}
+	# 	visible = {
+	# 		has_country_flag = gsk_system_is_enable_flag
+	# 		has_country_flag = gsk_recruit_character_interaction_unvis
+	# 		not = {
+	# 			has_country_flag = gsk_recruit_character_interaction_vis
+	# 		}
+	# 	}
+	# 	fire_only_once = no
+	# 	cost = 0
+	# 	days_remove = 0
+	# 	modifier = {
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	complete_effect = {
+	# 		set_country_flag = gsk_recruit_character_interaction_vis
+	# 		clr_country_flag = gsk_recruit_character_interaction_unvis
+	# 	}
+	# 	remove_effect = {
+	# 	}
+	# }
+	# gsk_recruit_character_interaction_unvis = {
+	# 	priority = 301
+	# 	allowed = {
+	# 	}
+	# 	available = {
+	# 	}
+	# 	visible = {
+	# 		has_country_flag = gsk_system_is_enable_flag
+	# 		has_country_flag = gsk_recruit_character_interaction_vis
+	# 		not = {
+	# 			has_country_flag = gsk_recruit_character_interaction_unvis
+	# 		}
+	# 	}
+	# 	fire_only_once = no
+	# 	cost = 0
+	# 	days_remove = 0
+	# 	modifier = {
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	complete_effect = {
+	# 		set_country_flag = gsk_recruit_character_interaction_unvis
+	# 		clr_country_flag = gsk_recruit_character_interaction_vis
+	# 	}
+	# 	remove_effect = {
+	# 	}
+	# }
+	gsk_begin_add_fumo = {
+		priority = 500
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+		}
+		visible = {
+			is_ai = no
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = allow_creat_fumo_flag
+			NOT = {
+				has_country_flag = gsk_begin_add_fumo_flag
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			set_country_flag = gsk_begin_add_fumo_flag
+			add_dynamic_modifier = {
+				modifier = gsk_dym_add_fumo
+			}
+		}
+		remove_effect = {
+		}
+	}
+	gsk_add_fumo_mission = {
+		priority = 501
+		activation = {
+			is_ai = no
+			has_country_flag = gsk_begin_add_fumo_flag
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = gsk_begin_add_fumo_flag
+			}
+		}
+		#icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 100
+		selectable_mission = no
+		complete_effect = {
+
+		}
+		timeout_effect = {
+			custom_effect_tooltip = gsk_add_fumo_mission_tt
+			add_to_variable = {
+				value = 1
+				var = gsk_var_number_of_fumo
+			}
+			activate_mission = gsk_add_fumo_mission
+		}
+	}
+	gsk_end_add_fumo = {
+		priority = 499
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			is_ai = no
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = gsk_begin_add_fumo_flag
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			remove_dynamic_modifier = {
+				modifier = gsk_dym_add_fumo
+			}
+			clr_country_flag = gsk_begin_add_fumo_flag
+		}
+		remove_effect = {
+		}
+	}
+	embodiment_of_Scarlet_Devil_quest1 = { #红魔馆任务:芙兰想要玩耍！
+		priority = 300
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = remilia_is_recruit_flag
+			not = {
+				has_country_flag = flandre_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = gsk_hire_event.31
+		}
+		remove_effect = {
+		}
+	}
+	embodiment_of_Scarlet_Devil_quest2 = { #红魔馆任务:冈格尼尔之枪的对手！
+		priority = 299
+		allowed = {
+		}
+		available = {
+			has_tech = artillery3
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = remilia_is_recruit_flag
+			not = {
+				has_country_flag = gsk_find_tno_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = gsk_hire_event.34
+		}
+		remove_effect = {
+		}
+	}
+	embodiment_of_Scarlet_Devil_quest3 = { #红魔馆任务:成为世界之主的第一步！
+		priority = 298
+		allowed = {
+		}
+		available = {
+			has_offensive_war = yes
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = remilia_is_recruit_flag
+			not = {
+				has_country_flag = gsk_find_tno_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = gsk_hire_event.35
+		}
+		remove_effect = {
+		}
+	}
+	human_village_quest0 = { #人间之里任务:我们将书写历史！
+		priority = 297
+		allowed = {
+		}
+		available = {
+			#pc_is_winner = yes
+			threat > 0.75
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = keine_is_recruit_flag
+			not = {
+				has_country_flag = gsk_find_tno_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_ideas = gsk_write_history_idea0
+		}
+		remove_effect = {
+		}
+	}
+	human_village_quest1 = { #人间之里任务:本居小铃的拯救阿求作战！
+		priority = 297
+		allowed = {
+		}
+		available = {
+			date < 2024.08.07
+			has_country_flag = shikieiki_is_recruit_flag
+			has_country_flag = akyuu_is_recruit_flag
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = keine_is_recruit_flag
+			not = {
+				has_country_flag = human_village_quest1_win_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 365
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_country_flag = human_village_quest1_begin_flag
+			news_event = gsk_news_event.30
+			country_event = gsk_hire_event.41
+		}
+		remove_effect = {
+		}
+	}
+	moriya_shrine_quest0 = {
+		#早苗
+		priority = 296
+		allowed = {
+		}
+		available = {
+			has_tech = advanced_medium_tank_chassis
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = sanae_is_recruit_flag
+			not = {
+				has_country_flag = gsk_find_tno_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = gsk_hire_event.72
+		}
+		remove_effect = {
+		}
+	}
+	moriya_shrine_quest1 = {
+		priority = 294
+		allowed = {
+		}
+		available = {
+			any_owned_state = {
+				nuclear_reactor > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = kanako_is_recruit_flag
+			not = {
+				has_country_flag = gsk_find_tno_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			every_unit_leader = {
+				limit = {
+					has_trait = sanae_commander_peculiarity
+				}
+				add_unit_leader_trait = sanae_commander_peculiarity0
+			}
+			add_ideas = gsk_moriya_shrine_idea1
+			gsk_change_moriya_shrine_idea = yes
+		}
+		remove_effect = {
+		}
+	}
+	moriya_shrine_quest2 = {
+		priority = 295
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_frog0 > 499
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = suwako_is_recruit_flag
+			not = {
+				#has_country_flag = moriya_shrine_quest2_temp
+			}
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_frog0
+				amount = -500
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = sanae_commander_peculiarity
+				}
+				add_unit_leader_trait = sanae_commander_peculiarity1
+			}
+			add_ideas = gsk_moriya_shrine_idea0
+			gsk_change_moriya_shrine_idea = yes
+		}
+		remove_effect = {
+		}
+	}
+	hakugyokurou_quest0 = {
+		priority = 294
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = yuyuko_is_recruit_flag
+			any_unit_leader = {
+				has_trait = yuyuko_commander_peculiarity0
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 30
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hakugyokurou_quest0_tooltip
+		}
+		remove_effect = {
+			effect_tooltip = {
+				gsk_yoyoku_rank_promotion = yes
+			}
+			hidden_effect = {
+				gsk_yoyoku_eat_what = yes
+			}
+		}
+	}
+	hakugyokurou_quest1 = {
+		priority = 294
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = yuyuko_is_recruit_flag
+			any_unit_leader = {
+				has_trait = yuyuko_commander_peculiarity1
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 30
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hakugyokurou_quest0_tooltip
+		}
+		remove_effect = {
+			effect_tooltip = {
+				gsk_yoyoku_rank_promotion = yes
+			}
+			hidden_effect = {
+				gsk_yoyoku_eat_what = yes
+			}
+		}
+	}
+	hakugyokurou_quest2 = {
+		priority = 294
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = yuyuko_is_recruit_flag
+			any_unit_leader = {
+				has_trait = yuyuko_commander_peculiarity2
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 30
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hakugyokurou_quest0_tooltip
+		}
+		remove_effect = {
+			effect_tooltip = {
+				gsk_yoyoku_rank_promotion = yes
+			}
+			hidden_effect = {
+				gsk_yoyoku_eat_what = yes
+			}
+		}
+	}
+	eientei_quest0 = {
+		priority = 280
+		allowed = {
+		}
+		available = {
+			has_country_flag = keine_is_recruit_flag
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = reisen_is_recruit_flag
+			has_country_flag = tewi_is_recruit_flag
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = gsk_hire_event.101
+		}
+		remove_effect = {
+		}
+	}
+	eientei_quest1 = {
+		priority = 279
+		allowed = {
+		}
+		available = {
+			has_country_flag = yagokoro_is_recruit_flag
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = reisen_is_recruit_flag
+			has_country_flag = tewi_is_recruit_flag
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 5
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			set_technology = {
+				gsk_equipment_houraisan_med_tech = 1
+			}
+		}
+	}
+	eientei_quest2 = {
+		priority = 81
+		allowed = {
+		}
+		available = {
+			# has_equipment = {
+			# 	gsk_equipment_houraisan_med0 > 0
+			# }
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = yagokoro_is_recruit_flag
+			not = {
+				has_country_flag = expand_role_list_flag
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_country_flag = expand_role_list_flag
+		}
+		remove_effect = {
+		}
+	}
+	eientei_quest3 = {
+		priority = 81
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = yagokoro_is_recruit_flag
+			has_country_flag = expand_role_list_flag
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			clr_country_flag = expand_role_list_flag
+		}
+		remove_effect = {
+		}
+	}
+	eientei_quest4 = {
+		priority = 277
+		allowed = {
+		}
+		available = {
+			has_country_flag = kaguya_is_recruit_flag
+			num_of_civilian_factories_available_for_projects > 15
+			not = {
+				has_country_flag = eientei_exhibition_just_open_flag
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = kaguya_is_recruit_flag
+			num_of_factories > 300
+		}
+		fire_only_once = no
+		cost = 50
+		days_remove = 30
+		modifier = {
+			civilian_factory_use = 15
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = eientei_exhibition_just_open_flag
+				days = 150
+				value = 1
+			}
+		}
+		remove_effect = {
+			mio:gsk_kourindou_design_bureau = {
+				add_mio_funds = 20000
+			}
+			mio:gsk_hakurei_design_bureau = {
+				add_mio_funds = 20000
+			}
+			mio:gsk_kapa_design_bureau = {
+				add_mio_funds = 20000
+			}
+			mio:gsk_kogasa_design_bureau = {
+				add_mio_funds = 20000
+			}
+			mio:gsk_youmu_design_bureau = {
+				add_mio_funds = 20000
+			}
+			mio:gsk_kaguya_design_bureau = {
+				add_mio_size = 2
+			}
+			add_breakthrough_points = {
+				specialization = specialization_land
+				value = 2
+			}
+			add_breakthrough_points = {
+				specialization = specialization_air
+				value = 2
+			}
+			add_breakthrough_points = {
+				specialization = specialization_nuclear
+				value = 2
+			}
+			add_breakthrough_points = {
+				specialization = specialization_naval
+				value = 2
+			}
+		}
+	}
+	eientei_quest5 = {
+		priority = 277
+		allowed = {
+		}
+		available = {
+			has_country_flag = kaguya_is_recruit_flag
+			num_of_civilian_factories_available_for_projects > 10
+			not = {
+				has_country_flag = eientei_exhibition_just_open_flag
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = kaguya_is_recruit_flag
+			AND = {
+				num_of_factories > 150
+				num_of_factories < 300
+			}
+		}
+		fire_only_once = no
+		cost = 50
+		days_remove = 30
+		modifier = {
+			civilian_factory_use = 10
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = eientei_exhibition_just_open_flag
+				days = 150
+				value = 1
+			}
+		}
+		remove_effect = {
+			mio:gsk_kourindou_design_bureau = {
+				add_mio_funds = 10000
+			}
+			mio:gsk_hakurei_design_bureau = {
+				add_mio_funds = 10000
+			}
+			mio:gsk_kapa_design_bureau = {
+				add_mio_funds = 10000
+			}
+			mio:gsk_kogasa_design_bureau = {
+				add_mio_funds = 10000
+			}
+			mio:gsk_youmu_design_bureau = {
+				add_mio_funds = 10000
+			}
+			mio:gsk_kaguya_design_bureau = {
+				add_mio_size = 1
+			}
+			add_breakthrough_points = {
+				specialization = specialization_land
+				value = 1
+			}
+			add_breakthrough_points = {
+				specialization = specialization_air
+				value = 1
+			}
+			add_breakthrough_points = {
+				specialization = specialization_nuclear
+				value = 1
+			}
+			add_breakthrough_points = {
+				specialization = specialization_naval
+				value = 1
+			}
+		}
+	}
+	eientei_quest6 = {
+		priority = 277
+		allowed = {
+		}
+		available = {
+			has_country_flag = kaguya_is_recruit_flag
+			num_of_civilian_factories_available_for_projects > 5
+			not = {
+				has_country_flag = eientei_exhibition_just_open_flag
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = kaguya_is_recruit_flag
+			num_of_factories < 150
+		}
+		fire_only_once = no
+		cost = 50
+		days_remove = 30
+		modifier = {
+			civilian_factory_use = 5
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = eientei_exhibition_just_open_flag
+				days = 150
+				value = 1
+			}
+		}
+		remove_effect = {
+			mio:gsk_kourindou_design_bureau = {
+				add_mio_funds = 5000
+			}
+			mio:gsk_hakurei_design_bureau = {
+				add_mio_funds = 5000
+			}
+			mio:gsk_kapa_design_bureau = {
+				add_mio_funds = 5000
+			}
+			mio:gsk_kogasa_design_bureau = {
+				add_mio_funds = 5000
+			}
+			mio:gsk_youmu_design_bureau = {
+				add_mio_funds = 5000
+			}
+			mio:gsk_kaguya_design_bureau = {
+				add_mio_size = 1
+			}
+		}
+	}
+	# kanjuden_quest0 = {
+	# 	priority = 276
+	# 	allowed = {
+	# 	}
+	# 	available = {
+	# 		has_country_flag = doremy_is_recruit_flag
+	# 		has_country_flag = clownpiece_is_recruit_flag
+	# 		has_country_flag = sagume_is_recruit_flag
+	# 	}
+	# 	visible = {
+	# 		has_country_flag = gsk_system_is_enable_flag
+	# 		has_country_flag = seiran_is_recruit_flag
+	# 		has_country_flag = ringo_is_recruit_flag
+	# 	}
+	# 	fire_only_once = yes
+	# 	cost = 0
+	# 	days_remove = 0
+	# 	modifier = {
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	complete_effect = {
+	# 		country_event = gsk_hire_event.121
+	# 	}
+	# 	remove_effect = {
+	# 	}
+	# }
+#################################################################################################
+########                        所有蓬莱提神药特质增加放在了角色特质里                      ########
+#################################################################################################
+	gsk_role_list_use_all0 = {
+		priority = 80
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+			any_unit_leader = {
+				has_trait = from_gsk
+				not = {
+					has_trait = gsk_houraisan_med0
+				}
+				not = {
+					has_trait = gsk_houraisan_med1
+				}
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			while_loop_effect = {
+				limit = {
+					AND = {
+						any_unit_leader = {
+							has_trait = from_gsk
+							not = {
+								has_trait = gsk_houraisan_med0
+							}
+							not = {
+								has_trait = gsk_houraisan_med1
+							}
+							not = {
+								has_trait = gsk_houraisan_med2
+							}
+						}
+						has_equipment = {
+							gsk_equipment_houraisan_med0 > 0
+						}
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = gsk_equipment_houraisan_med0
+					amount = -1
+					producer = root
+				}
+				random_unit_leader = {
+					limit = {
+						has_trait = from_gsk
+						not = {
+							has_trait = gsk_houraisan_med0
+						}
+						not = {
+							has_trait = gsk_houraisan_med1
+						}
+						not = {
+							has_trait = gsk_houraisan_med2
+						}
+					}
+					gsk_increase_houraisan_med = yes
+				}
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use_all1 = {
+		priority = 79
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+			any_unit_leader = {
+				has_trait = from_gsk
+				has_trait = gsk_houraisan_med0
+				not = {
+					has_trait = gsk_houraisan_med1
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			while_loop_effect = {
+				limit = {
+					AND = {
+						any_unit_leader = {
+							has_trait = from_gsk
+							has_trait = gsk_houraisan_med0
+							not = {
+								has_trait = gsk_houraisan_med1
+							}
+						}
+						has_equipment = {
+							gsk_equipment_houraisan_med0 > 0
+						}
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = gsk_equipment_houraisan_med0
+					amount = -1
+					producer = root
+				}
+				random_unit_leader = {
+					limit = {
+						has_trait = from_gsk
+						has_trait = gsk_houraisan_med0
+						not = {
+							has_trait = gsk_houraisan_med1
+						}
+					}
+					gsk_increase_houraisan_med = yes
+				}
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use_all2 = {
+		priority = 78
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+			any_unit_leader = {
+				has_trait = from_gsk
+				has_trait = gsk_houraisan_med1
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			while_loop_effect = {
+				limit = {
+					AND = {
+						any_unit_leader = {
+							has_trait = from_gsk
+							has_trait = gsk_houraisan_med1
+							not = {
+								has_trait = gsk_houraisan_med2
+							}
+						}
+						has_equipment = {
+							gsk_equipment_houraisan_med0 > 0
+						}
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = gsk_equipment_houraisan_med0
+					amount = -1
+					producer = root
+				}
+				random_unit_leader = {
+					limit = {
+						has_trait = from_gsk
+						has_trait = gsk_houraisan_med1
+						not = {
+							has_trait = gsk_houraisan_med2
+						}
+					}
+					gsk_increase_houraisan_med = yes
+				}
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use00 = {
+		priority = 77
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = remilia_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = remilia_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use01 = {
+		priority = 76
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = sakuya_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = sakuya_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use02 = {
+		priority = 75
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = flandre_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = flandre_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use03 = {
+		priority = 74
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = patchouli_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = patchouli_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use04 = {
+		priority = 73
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = cirno_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = cirno_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use05 = {
+		priority = 72
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = akyuu_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = akyuu_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use06 = {
+		priority = 71
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = keine_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = keine_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use07 = {
+		priority = 70
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = reimu_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = reimu_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use08 = {
+		priority = 69
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = marisa_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = marisa_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use09 = {
+		priority = 68
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			is_ai = yes
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = sanae_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = sanae_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use10 = {
+		priority = 67
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				OR = {
+					has_trait = sanae_commander_peculiarity
+					has_trait = sanae_commander_peculiarity0
+					has_trait = sanae_commander_peculiarity1
+				}
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					OR = {
+						has_trait = sanae_commander_peculiarity
+						has_trait = sanae_commander_peculiarity0
+						has_trait = sanae_commander_peculiarity1
+					}
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use11 = {
+		priority = 67
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = suwako_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = suwako_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use12 = {
+		priority = 66
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = kanako_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = kanako_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use13 = {
+		priority = 65
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = aya_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = aya_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use14 = {
+		priority = 64
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = satori_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = satori_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use15 = {
+		priority = 63
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = koishi_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = koishi_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use16 = {
+		priority = 62
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = youmu_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = youmu_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use17 = {
+		priority = 61
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				OR = {
+					has_trait = yuyuko_commander_peculiarity0
+					has_trait = yuyuko_commander_peculiarity1
+					has_trait = yuyuko_commander_peculiarity2
+					has_trait = yuyuko_commander_peculiarity3
+				}
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					OR = {
+						has_trait = yuyuko_commander_peculiarity0
+						has_trait = yuyuko_commander_peculiarity1
+						has_trait = yuyuko_commander_peculiarity2
+						has_trait = yuyuko_commander_peculiarity3
+					}
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use18 = {
+		priority = 60
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = reisen_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = reisen_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use19 = {
+		priority = 59
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = yagokoro_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = yagokoro_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use20 = {
+		priority = 58
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = mokou_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = mokou_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use21 = {
+		priority = 57
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = tenshi_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = tenshi_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use22 = {
+		priority = 56
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = shikieiki_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = shikieiki_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use23 = {
+		priority = 55
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = yukari_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = yukari_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use24 = {
+		priority = 54
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = kosuzu_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = kosuzu_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use25 = {
+		priority = 53
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = yuka_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = yuka_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use26 = {
+		priority = 52
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = gsk_alice_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = gsk_alice_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use27 = {
+		priority = 51
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = renko_commander_peculiarity1
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = renko_commander_peculiarity1
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use28 = {
+		priority = 50
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = hearn_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = hearn_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use29 = {
+		priority = 50
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = seiran_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = seiran_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use30 = {
+		priority = 50
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = ringo_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = ringo_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use31 = {
+		priority = 50
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = doremy_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = doremy_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use32 = {
+		priority = 50
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = clownpiece_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = clownpiece_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use33 = {
+		priority = 50
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = sagume_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = sagume_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use34 = {
+		priority = 50
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = junko_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = junko_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+	gsk_role_list_use35 = {
+		priority = 50
+		allowed = {
+		}
+		available = {
+			has_equipment = {
+				gsk_equipment_houraisan_med0 > 0
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = expand_role_list_flag
+			any_unit_leader = {
+				has_trait = hecatia_commander_peculiarity
+				not = {
+					has_trait = gsk_houraisan_med2
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = -1
+				producer = root
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = hecatia_commander_peculiarity
+				}
+				gsk_increase_houraisan_med = yes
+			}
+			custom_effect_tooltip = eientei_quest2.tt
+		}
+		remove_effect = {
+		}
+	}
+}

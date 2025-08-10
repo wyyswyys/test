@@ -1,0 +1,276 @@
+@defineCost = 100
+
+ideas = {
+
+    # head_minister = {
+    #     vacant_hog = {
+    #         picture = generic_vacant
+    #         name = vacant
+    #         default = yes
+    #         cost = @defineCost
+    #         allowed = {
+    #             always = yes
+    #         }
+    #         visible = {
+    #         }
+    #         allowed_to_remove = {
+    #             head_minister_trigger = yes
+    #         }
+    #         traits = {
+    #         }
+    #     }
+    # }
+
+    foreign_minister = {
+        aya_for = {
+            picture = aya
+            name = aya_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = aya_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_aya
+            }
+        }
+    }
+
+    economic_minister = {
+        keine_eco = {
+            picture = keine
+            name = keine_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = keine_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_keine
+            }
+        }
+        yuyuko_eco = {
+            picture = yuyuko
+            name = yuyuko_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = yuyuko_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_yuyuko
+            }
+        }
+        hearn_eco = {
+            picture = hearn
+            name = hearn_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = hearn_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_hearn
+            }
+        }
+        renko_eco = {
+            picture = renko
+            name = renko_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = renko_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_renko
+            }
+        }
+    }
+
+    interior_minister = {
+        akyuu_sec = {
+            picture = akyuu
+            name = akyuu_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = akyuu_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_akyuu
+            }
+        }
+        seiran_sec = {
+            picture = seiran
+            name = seiran_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = seiran_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_seiran
+            }
+        }
+        sagume_sec = {
+            picture = sagume
+            name = sagume_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = sagume_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_sagume
+            }
+        }
+    }
+
+    intelligence_minister = {
+        satori_int = {
+            picture = satori
+            name = satori_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = satori_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_satori
+            }
+        }
+        koishi_int = {
+            picture = koishi
+            name = koishi_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = koishi_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_koishi
+            }
+        }
+        kokoro_int = {
+            picture = kokoro
+            name = kokoro_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = kokoro_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_kokoro
+            }
+        }
+    }
+
+    theorist_minister = {
+        remilia_theorist = {
+            picture = remilia
+            name = remilia_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = remilia_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_remilia
+            }
+        }
+        patchouli_theorist = {
+            picture = patchouli
+            name = patchouli_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = patchouli_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_patchouli
+            }
+        }
+        kosuzu_theorist = {
+            picture = kosuzu
+            name = kosuzu_name
+            cost = @defineCost
+            allowed = {
+                always = yes
+            }
+            visible = {
+                has_global_flag = find_gsk
+            }
+            available = {
+                has_country_flag = kosuzu_is_recruit_flag
+            }
+            traits = {
+                gsk_advisor_kosuzu
+            }
+        }
+    }
+}

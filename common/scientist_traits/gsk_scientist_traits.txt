@@ -1,0 +1,92 @@
+# special_project_speed_factor = 0.15
+# scientist_breakthrough_bonus_factor = 0.1
+# scientist_research_bonus_factor = 0.1
+# special_project_facility_supply_consumption_factor = 0.05
+# scientist_xp_gain_factor = 0.05
+
+scientist_trait_patchouli = {
+	icon = GFX_scientist_trait_patchouli
+	modifier = {
+		special_project_speed_factor = -0.05
+		scientist_breakthrough_bonus_factor = -0.03
+	}
+}
+scientist_trait_reimu = {
+	icon = GFX_scientist_trait_reimu
+	modifier = {
+		special_project_speed_factor = -0.05
+		scientist_breakthrough_bonus_factor = -0.03
+	}
+}
+scientist_trait_kanako = {
+	icon = GFX_scientist_trait_kanako
+	modifier = {
+		special_project_speed_factor = -0.05
+		scientist_breakthrough_bonus_factor = -0.03
+	}
+}
+scientist_trait_youmu = {
+	icon = GFX_scientist_trait_youmu
+	modifier = {
+		special_project_speed_factor = -0.05
+		scientist_breakthrough_bonus_factor = -0.03
+	}
+}
+scientist_trait_yagokoro = {
+	icon = GFX_scientist_trait_yagokoro
+	modifier = {
+		special_project_speed_factor = -0.05
+		scientist_breakthrough_bonus_factor = -0.03
+	}
+}
+scientist_trait_aya = {
+	icon = GFX_scientist_trait_aya
+	modifier = {
+		special_project_speed_factor = -0.05
+		scientist_breakthrough_bonus_factor = -0.03
+	}
+}
+scientist_trait_akyuu = {
+	icon = GFX_scientist_trait_akyuu
+	modifier = {
+		special_project_speed_factor = -0.05
+		scientist_breakthrough_bonus_factor = -0.03
+	}
+}
+scientist_trait_keine = {
+	icon = GFX_scientist_trait_keine
+	modifier = {
+		special_project_speed_factor = -0.05
+		scientist_breakthrough_bonus_factor = -0.03
+	}
+}
+scientist_trait_renko = {
+	icon = GFX_scientist_trait_renko
+	modifier = {
+		special_project_speed_factor = 0.15
+		scientist_breakthrough_bonus_factor = 0.05
+		scientist_research_bonus_factor = 0.1
+	}
+}
+scientist_trait_hearn = {
+	icon = GFX_scientist_trait_hearn
+	modifier = {
+		special_project_speed_factor = 0.05
+		scientist_breakthrough_bonus_factor = 0.15
+		scientist_research_bonus_factor = 0.1
+	}
+}
+scientist_trait_sagume = {
+	icon = GFX_scientist_trait_sagume
+	modifier = {
+		special_project_speed_factor = 0.15
+		scientist_breakthrough_bonus_factor = 0.15
+	}
+}
+scientist_trait_doremy = {
+	icon = GFX_scientist_trait_doremy
+	modifier = {
+		special_project_speed_factor = 0.1
+		special_project_facility_supply_consumption_factor = -0.3
+	}
+}

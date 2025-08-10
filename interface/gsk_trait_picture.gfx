@@ -1,0 +1,422 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_trait_from_gsk"
+		texturefile = "gfx/traits/from_gsk.png"
+	}
+	spriteType = {
+		name = "GFX_trait_from_gsk_navy"
+		texturefile = "gfx/traits/from_gsk.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_human"
+		texturefile = "gfx/traits/gsk_race_human_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_human_navy"
+		texturefile = "gfx/traits/gsk_race_human_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_vampires"
+		texturefile = "gfx/traits/gsk_race_vampires_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_vampires_navy"
+		texturefile = "gfx/traits/gsk_race_vampires_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_wizard"
+		texturefile = "gfx/traits/gsk_race_wizard_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_wizard_navy"
+		texturefile = "gfx/traits/gsk_race_wizard_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_orc"
+		texturefile = "gfx/traits/gsk_race_orc_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_orc_navy"
+		texturefile = "gfx/traits/gsk_race_orc_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_evil_spirit"
+		texturefile = "gfx/traits/gsk_race_evil_spirit_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_evil_spirit_navy"
+		texturefile = "gfx/traits/gsk_race_evil_spirit_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_god"
+		texturefile = "gfx/traits/gsk_race_god_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_god_navy"
+		texturefile = "gfx/traits/gsk_race_god_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_heavenly_dog"
+		texturefile = "gfx/traits/gsk_race_heavenly_dog_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_heavenly_dog_navy"
+		texturefile = "gfx/traits/gsk_race_heavenly_dog_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_satori"
+		texturefile = "gfx/traits/gsk_race_satori_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_satori_navy"
+		texturefile = "gfx/traits/gsk_race_satori_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_ghost"
+		texturefile = "gfx/traits/gsk_race_ghost_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_ghost_navy"
+		texturefile = "gfx/traits/gsk_race_ghost_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_hghost"
+		texturefile = "gfx/traits/gsk_race_hghost_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_hghost_navy"
+		texturefile = "gfx/traits/gsk_race_hghost_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_moon"
+		texturefile = "gfx/traits/gsk_race_moon_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_moon_navy"
+		texturefile = "gfx/traits/gsk_race_moon_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_tapir_navy"
+		texturefile = "gfx/traits/gsk_race_moon_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_ismoon"
+		texturefile = "gfx/traits/gsk_race_moon_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_rabbit"
+		texturefile = "gfx/traits/gsk_race_rabbit_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_rabbit_navy"
+		texturefile = "gfx/traits/gsk_race_rabbit_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_moonrabbit"
+		texturefile = "gfx/traits/gsk_race_rabbit_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_moonrabbit_navy"
+		texturefile = "gfx/traits/gsk_race_rabbit_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_bogeyman"
+		texturefile = "gfx/traits/gsk_race_bogeyman_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_bogeyman_navy"
+		texturefile = "gfx/traits/gsk_race_bogeyman_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_celestial"
+		texturefile = "gfx/traits/gsk_race_celestial_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_celestial_navy"
+		texturefile = "gfx/traits/gsk_race_celestial_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_tsukumogami"
+		texturefile = "gfx/traits/gsk_race_tsukumogami_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_tsukumogami_navy"
+		texturefile = "gfx/traits/gsk_race_tsukumogami_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_yama"
+		texturefile = "gfx/traits/gsk_race_yama_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_race_yama_navy"
+		texturefile = "gfx/traits/gsk_race_yama_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_houraisan_med0"
+		texturefile = "gfx/traits/gsk_houraisan_med.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_houraisan_med1"
+		texturefile = "gfx/traits/gsk_houraisan_med.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_houraisan_med2"
+		texturefile = "gfx/traits/gsk_houraisan_med.png"
+	}
+	spriteType = {
+		name = "GFX_trait_sakuya_commander_peculiarity"
+		texturefile = "gfx/traits/sakuya_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_remilia_commander_peculiarity"
+		texturefile = "gfx/traits/remilia_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_patchouli_commander_peculiarity"
+		texturefile = "gfx/traits/patchouli_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_patchouli"
+		texturefile = "gfx/traits/patchouli_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_cirno_commander_peculiarity"
+		texturefile = "gfx/traits/cirno_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_flandre_commander_peculiarity"
+		texturefile = "gfx/traits/flandre_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_akyuu_commander_peculiarity"
+		texturefile = "gfx/traits/akyuu_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_akyuu_commander_peculiarity0"
+		texturefile = "gfx/traits/akyuu_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_akyuu"
+		texturefile = "gfx/traits/akyuu_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_keine_commander_peculiarity"
+		texturefile = "gfx/traits/keine_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_keine"
+		texturefile = "gfx/traits/keine_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_kosuzu_keine_commander_peculiarity"
+		texturefile = "gfx/traits/keine_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_reimu_commander_peculiarity"
+		texturefile = "gfx/traits/reimu_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_reimu"
+		texturefile = "gfx/traits/reimu_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_marisa_commander_peculiarity"
+		texturefile = "gfx/traits/marisa_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_alice_commander_peculiarity_navy"
+		texturefile = "gfx/traits/gsk_alice_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_gsk_alice_commander_peculiarity"
+		texturefile = "gfx/traits/gsk_alice_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_sanae_commander_peculiarity"
+		texturefile = "gfx/traits/sanae_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_sanae_commander_peculiarity0"
+		texturefile = "gfx/traits/kanako_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_sanae_commander_peculiarity1"
+		texturefile = "gfx/traits/suwako_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_suwako_commander_peculiarity"
+		texturefile = "gfx/traits/suwako_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_kanako_commander_peculiarity"
+		texturefile = "gfx/traits/kanako_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_kanako"
+		texturefile = "gfx/traits/kanako_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_aya_commander_peculiarity"
+		texturefile = "gfx/traits/aya_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_aya"
+		texturefile = "gfx/traits/aya_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_satori_commander_peculiarity"
+		texturefile = "gfx/traits/satori_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_satori_spy_peculiarity"
+		texturefile = "gfx/traits/satori_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_koishi_commander_peculiarity"
+		texturefile = "gfx/traits/koishi_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_koishi_spy_peculiarity"
+		texturefile = "gfx/traits/koishi_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_yuyuko_commander_peculiarity0"
+		texturefile = "gfx/traits/yuyuko_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_yuyuko_commander_peculiarity1"
+		texturefile = "gfx/traits/yuyuko_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_yuyuko_commander_peculiarity2"
+		texturefile = "gfx/traits/yuyuko_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_yuyuko_commander_peculiarity3"
+		texturefile = "gfx/traits/yuyuko_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_youmu_commander_peculiarity"
+		texturefile = "gfx/traits/youmu_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_youmu"
+		texturefile = "gfx/traits/youmu_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_uuz_supply_grace"
+		texturefile = "gfx/traits/uuz_supply_grace_texticon.png"
+	}
+	spriteType = {
+		name = "GFX_trait_reisen_commander_peculiarity"
+		texturefile = "gfx/traits/reisen_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_tewi_commander_peculiarity_navy"
+		texturefile = "gfx/traits/tewi_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_mokou_commander_peculiarity"
+		texturefile = "gfx/traits/mokou_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_yagokoro_commander_peculiarity"
+		texturefile = "gfx/traits/yagokoro_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_yagokoro"
+		texturefile = "gfx/traits/yagokoro_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_kaguya_commander_peculiarity_navy"
+		texturefile = "gfx/traits/kaguya_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_kogasa_commander_peculiarity_navy"
+		texturefile = "gfx/traits/kogasa_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_kokoro_commander_peculiarity_navy"
+		texturefile = "gfx/traits/kokoro_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_yuka_commander_peculiarity"
+		texturefile = "gfx/traits/yuka_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_tenshi_commander_peculiarity"
+		texturefile = "gfx/traits/tenshi_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_yukari_commander_peculiarity"
+		texturefile = "gfx/traits/yukari_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_kosuzu_commander_peculiarity"
+		texturefile = "gfx/traits/kosuzu_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_shikieiki_commander_peculiarity"
+		texturefile = "gfx/traits/shikieiki_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_renko_commander_peculiarity"
+		texturefile = "gfx/traits/renko_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_renko_commander_peculiarity1"
+		texturefile = "gfx/traits/renko_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_renko"
+		texturefile = "gfx/traits/renko_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_hearn_commander_peculiarity"
+		texturefile = "gfx/traits/hearn_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_hearn"
+		texturefile = "gfx/traits/hearn_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_sagume_commander_peculiarity"
+		texturefile = "gfx/traits/sagume_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_sagume"
+		texturefile = "gfx/traits/sagume_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_seiran_commander_peculiarity"
+		texturefile = "gfx/traits/seiran_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_ringo_commander_peculiarity_navy"
+		texturefile = "gfx/traits/ringo_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_doremy_commander_peculiarity_navy"
+		texturefile = "gfx/traits/doremy_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_scientist_trait_doremy"
+		texturefile = "gfx/traits/doremy_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_clownpiece_commander_peculiarity"
+		texturefile = "gfx/traits/clownpiece_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_junko_commander_peculiarity"
+		texturefile = "gfx/traits/junko_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_reisen_commander_peculiarity2"
+		texturefile = "gfx/traits/junko_commander_peculiarity_traits.png"
+	}
+	spriteType = {
+		name = "GFX_trait_hecatia_commander_peculiarity"
+		texturefile = "gfx/traits/hecatia_commander_peculiarity_traits.png"
+	}
+}

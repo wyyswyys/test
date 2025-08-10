@@ -1,0 +1,58 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_gsk_leaders_pre_button"
+		texturefile = "gfx/gui/gsk_choose_leaders/pre_button.dds"
+	}
+	SpriteType = {
+		name = "GFX_gsk_leaders_next_button"
+		texturefile = "gfx/gui/gsk_choose_leaders/next_button.dds"
+	}
+	SpriteType = {
+		name = "GFX_choose_leader_button"
+		texturefile = "gfx/gui/gsk_choose_leaders/choose_leader_button.dds"
+	}
+	SpriteType = {
+		name = "GFX_change_leader_button"
+		texturefile = "gfx/gui/change_leader_button.dds"
+	}
+	SpriteType = {
+		name = "GFX_gsk_leaders_choose_moriya"
+		texturefile = "gfx/gui/gsk_choose_leaders/choose_moriya.dds"
+	}
+	SpriteType = {
+		name = "GFX_background_other"
+		texturefile = "gfx/gui/gsk_choose_leaders/background_other.dds"
+	}
+	SpriteType = {
+		name = "GFX_background_hakurei"
+		texturefile = "gfx/gui/gsk_choose_leaders/background_hakurei.dds"
+	}
+	SpriteType = {
+		name = "GFX_background_hakugyokurou"
+		texturefile = "gfx/gui/gsk_choose_leaders/background_hakugyokurou.dds"
+	}
+	SpriteType = {
+		name = "GFX_background_scarlet_devil"
+		texturefile = "gfx/gui/gsk_choose_leaders/background_scarlet_devil.dds"
+	}
+	SpriteType = {
+		name = "GFX_background_moriya"
+		texturefile = "gfx/gui/gsk_choose_leaders/background_moriya.dds"
+	}
+	SpriteType = {
+		name = "GFX_background_chireiden"
+		texturefile = "gfx/gui/gsk_choose_leaders/background_chireiden.dds"
+	}
+	SpriteType = {
+		name = "GFX_background_human_village"
+		texturefile = "gfx/gui/gsk_choose_leaders/background_human_village.dds"
+	}
+	SpriteType = {
+		name = "GFX_background_eientei"
+		texturefile = "gfx/gui/gsk_choose_leaders/background_eientei.dds"
+	}
+	SpriteType = {
+		name = "GFX_background_kanjuden"
+		texturefile = "gfx/gui/gsk_choose_leaders/background_kanjuden.dds"
+	}
+}

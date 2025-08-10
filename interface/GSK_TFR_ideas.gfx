@@ -1,0 +1,62 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_idea_remilia"
+        texturefile = "gfx/ideas/gsk_ideas_remilia.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_patchouli"
+        texturefile = "gfx/ideas/gsk_ideas_patchouli.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_akyuu"
+        texturefile = "gfx/ideas/gsk_ideas_akyuu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_keine"
+        texturefile = "gfx/ideas/gsk_ideas_keine.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_aya"
+        texturefile = "gfx/ideas/gsk_ideas_aya.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_satori"
+        texturefile = "gfx/ideas/gsk_ideas_satori.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_koishi"
+        texturefile = "gfx/ideas/gsk_ideas_koishi.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_yuyuko"
+        texturefile = "gfx/ideas/gsk_ideas_yuyuko.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_kokoro"
+        texturefile = "gfx/ideas/gsk_ideas_kokoro.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_kosuzu"
+        texturefile = "gfx/ideas/gsk_ideas_kosuzu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_hearn"
+        texturefile = "gfx/ideas/gsk_ideas_hearn.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_renko"
+        texturefile = "gfx/ideas/gsk_ideas_renko.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_seiran"
+        texturefile = "gfx/ideas/gsk_ideas_seiran.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_sagume"
+        texturefile = "gfx/ideas/gsk_ideas_sagume.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_junko"
+        texturefile = "gfx/ideas/gsk_ideas_junko.dds"
+    }
+}

@@ -1,0 +1,389 @@
+leader_traits = {
+	
+	gsk_idea_industrial_concern = { #总工会
+		random = no
+
+        production_speed_buildings_factor = 0.15
+        consumer_goods_factor = -0.2
+		production_factory_max_efficiency_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.3
+	}
+	
+	gsk_idea_research_institute = { #研究所
+		random = no
+
+        research_speed_factor = 0.15
+        local_resources_factor = 0.25
+        production_lack_of_resource_penalty_factor = -0.15
+		global_building_slots_factor = 0.2
+	}
+
+	gsk_advisor_remilia = { #蕾米莉亚
+	    random = no
+        #sprite = 10
+
+		war_stability_factor = 0.1
+		war_support_factor = 0.2
+		generate_wargoal_tension = -0.3
+		subjects_autonomy_gain = -0.3
+		land_night_attack = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_sakuya = { 
+	    random = no
+
+		attrition = -0.15
+		supply_node_range = 0.15
+		supply_factor = 0.1
+		supply_consumption_factor = -0.1
+		production_speed_supply_node_factor = 3
+		command_cap_increase = 20
+		#command_power = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_patchouli = { 
+	    random = no
+		
+		research_speed_factor = 0.15
+		naval_doctrine_cost_factor = -0.1
+		air_doctrine_cost_factor = -0.1
+		land_doctrine_cost_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_keine = { 
+	    random = no
+		
+		production_factory_efficiency_gain_factor = 0.2
+		production_factory_max_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.2
+		research_speed_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_akyuu = { 
+	    random = no
+		
+		experience_gain_army_factor = 0.15
+		experience_gain_navy_factor = 0.15
+		experience_gain_air_factor = 0.15
+		max_command_power_mult = 0.3
+		political_advisor_cost_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_reimu = { 
+	    random = no
+		
+		experience_gain_air = 0.5
+		air_weather_penalty = -0.3
+		air_mission_efficiency = 0.2
+		air_range_factor = 0.2
+		command_cap_increase = 20
+		#command_power = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_marisa = { 
+	    random = no
+		
+		army_artillery_attack_factor = 0.2
+		air_strategic_bomber_bombing_factor = 0.5
+		rocket_attack_factor = 1
+		command_cap_increase = 20
+		#command_power = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_alice = { 
+	    random = no
+		
+		repair_speed_factor = 0.25
+		experience_gain_navy = 0.5
+		sortie_efficiency = 0.15
+		carrier_traffic = 0.2
+		command_cap_increase = 20
+		#command_power = 0
+		# equipment_bonus = {
+		#     carrier = {
+		# 		carrier_size = 1
+		# 	}
+		# }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_sanae = {
+		random = no
+		
+		army_armor_attack_factor = 0.15
+		army_armor_defence_factor = 0.15
+		mechanized_attack_factor = 0.1
+		mechanized_defence_factor = 0.1
+		command_cap_increase = 20
+		#command_power = 0
+		equipment_bonus = {
+			modern_tank_chassis = {
+				hard_attack = 0.15
+				soft_attack = 0.25
+				armor_value = 0.25
+				ap_attack = 0.25
+				hardness = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_aya = {
+		random = no
+		
+		enemy_intel_network_gain_factor_over_occupied_tag = 0.25
+		political_power_factor = 0.25
+		drift_defence_factor = 0.3
+		political_power_gain = 1
+		dtg_threshold = 0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_satori = {
+		random = no
+		
+		enemy_operative_detection_chance = 80
+		operative_slot = 2
+		decryption_power_factor = 0.3
+		intel_network_gain_factor = 0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_koishi = {
+		random = no
+		
+		own_operative_detection_chance_factor = -0.25
+		own_operative_intel_extraction_rate = -0.25
+		foreign_subversive_activites = -0.3
+		new_operative_slot_bonus = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_yuyuko = {
+		random = no
+		
+		offence = 0.05
+		consumer_goods_factor = 0.15
+		production_speed_industrial_complex_factor = 0.25
+		production_speed_office_park_factor = 0.25
+		industrial_capacity_factory = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_youmu = {
+		random = no
+		
+		experience_gain_army = 0.5
+		army_attack_factor = 0.05
+		army_infantry_attack_factor = 0.15
+		army_infantry_defence_factor = 0.15
+		command_cap_increase = 20
+		#command_power = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_reisen = {
+		random = no
+		
+		experience_gain_army = 0.5
+		army_org_regain = 0.15
+		army_org_factor = 0.1
+		command_cap_increase = 20
+		#command_power = 0
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+				reliability = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_kaguya = {
+		random = no
+		
+		experience_gain_air = 0.5
+		air_night_penalty = -0.3
+		air_strategic_bomber_night_penalty = -0.5
+		air_close_air_support_org_damage_factor = 0.15
+		command_cap_increase = 20
+		#command_power = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_yagokoro = {
+		random = no
+		
+		army_strength_factor = 0.05
+		experience_loss_factor = -0.3
+		weekly_manpower = 600
+		#scientist_breakthrough_bonus_factor = 0.15
+		#special_project_speed_factor = 0.15
+		command_cap_increase = 20
+		#command_power = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_kokoro = {
+		random = no
+		
+		operative_slot = 1
+		agency_upgrade_time = -0.25
+		intel_from_operatives_factor = 0.3
+		intel_from_combat_factor = 0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_yukari = {
+		random = no
+		
+		command_power_gain = 0.5
+		conscription = 0.02
+		required_garrison_factor = -0.15
+		resistance_target = -0.15
+		command_cap_increase = 20
+		#command_power = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_tenshi = {
+		random = no
+		
+		truck_attrition_factor = -0.3
+		production_speed_buildings_factor = 0.05
+		land_bunker_effectiveness_factor = 0.2
+		coastal_bunker_effectiveness_factor = 0.2
+		command_cap_increase = 20
+		#command_power = 0
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_shikieiki = {
+		random = no
+		
+		resistance_growth_on_our_occupied_states = 0.5
+		required_garrison_factor = -0.25
+		resistance_target = -0.25
+		command_cap_increase = 20
+		#command_power = 0
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_kosuzu = {
+		random = no
+
+		research_speed_factor = 0.1
+		command_power_gain = 0.3
+		command_power_gain_mult = 0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_hearn = {
+		random = no
+		
+		income_growth_factor = 0.05
+		expense_growth_factor = -0.05
+		personal_expense = -0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_renko = {
+		random = no
+
+		tax_business_rate = 0.05
+		business_value_factor = 0.15
+		business_value = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_seiran = {
+		random = no
+
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.2
+		consumer_goods_factor = -0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_sagume = {
+		random = no
+
+		production_speed_buildings_factor = 0.2
+		research_speed_factor = 0.1
+		local_resources_factor = 0.2
+		inflation_monthly = 0.0005
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gsk_advisor_junko = {
+		random = no
+
+		stability_factor = -0.5
+		monthly_population = -1
+		war_support_factor = 1
+		offence = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

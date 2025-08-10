@@ -1,0 +1,538 @@
+#Important to put HIGHEST first
+gsk_increase_embodiment_idea = {
+	custom_effect_tooltip = gsk_increase_embodiment_idea.tt
+	if = {
+		limit = { has_idea = gsk_embodiment_idea1 }
+		every_subject_country = {
+			swap_ideas = {
+				remove_idea = gsk_embodiment_idea_sub1
+				add_idea = gsk_embodiment_idea_sub2
+			}
+		}
+		swap_ideas = {
+			remove_idea = gsk_embodiment_idea1
+			add_idea = gsk_embodiment_idea2
+		}
+	}
+	else_if = {
+		limit = { has_idea = gsk_embodiment_idea0 }
+		every_subject_country = {
+			swap_ideas = {
+				remove_idea = gsk_embodiment_idea_sub0
+				add_idea = gsk_embodiment_idea_sub1
+			}
+		}
+		swap_ideas = {
+			remove_idea = gsk_embodiment_idea0
+			add_idea = gsk_embodiment_idea1
+		}
+	}
+	else_if = {
+		limit = { not =  { has_idea = gsk_embodiment_idea0 } }
+		every_subject_country = {
+			add_ideas = gsk_embodiment_idea_sub0
+		}
+		add_ideas = gsk_embodiment_idea0
+	}
+}
+
+gsk_change_moriya_shrine_idea = {
+	if = {
+		limit = {
+			has_idea = gsk_moriya_shrine_idea0
+			has_idea = gsk_moriya_shrine_idea1
+		}
+		remove_ideas = gsk_moriya_shrine_idea0
+		remove_ideas = gsk_moriya_shrine_idea1
+		add_ideas = gsk_moriya_shrine_idea2
+	}
+}
+
+gsk_yoyoku_eat_what = {
+	if = {
+		limit = { 
+			has_equipment = {
+				infantry_equipment > 299
+			}
+			has_equipment = {
+				artillery_equipment > 49
+			}
+			has_equipment = {
+				support_equipment > 49
+			}
+			has_equipment = {
+				motorized_equipment > 49
+			}
+			has_equipment = {
+				gsk_equipment_frog0 > 49
+			}
+		}
+		random_list = {
+			20 = {
+				country_event = gsk_hire_event.91
+				add_equipment_to_stockpile = {
+					type = gsk_equipment_frog0
+					amount = -50
+					producer = root
+				}
+			}
+			20 = {
+				country_event = gsk_hire_event.93
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = -50
+					producer = root
+				}
+			}
+			20 = {
+				country_event = gsk_hire_event.94
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -50
+					producer = root
+				}
+			}
+			20 = {
+				country_event = gsk_hire_event.92
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -50
+					producer = root
+				}
+			}
+			5 = {
+				country_event = gsk_hire_event.95
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -300
+					producer = root
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_equipment = {
+				infantry_equipment > 299
+			}
+			has_equipment = {
+				artillery_equipment > 49
+			}
+			has_equipment = {
+				support_equipment > 49
+			}
+			has_equipment = {
+				motorized_equipment > 49
+			}
+		}
+		random_list = {
+			20 = {
+				country_event = gsk_hire_event.93
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = -50
+					producer = root
+				}
+			}
+			20 = {
+				country_event = gsk_hire_event.94
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -50
+					producer = root
+				}
+			}
+			20 = {
+				country_event = gsk_hire_event.92
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -50
+					producer = root
+				}
+			}
+			5 = {
+				country_event = gsk_hire_event.95
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -300
+					producer = root
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_equipment = {
+				infantry_equipment > 299
+			}
+			has_equipment = {
+				artillery_equipment > 49
+			}
+			has_equipment = {
+				support_equipment > 49
+			}
+		}
+		random_list = {
+			20 = {
+				country_event = gsk_hire_event.94
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -50
+					producer = root
+				}
+			}
+			20 = {
+				country_event = gsk_hire_event.92
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -50
+					producer = root
+				}
+			}
+			20 = {
+				country_event = gsk_hire_event.95
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -300
+					producer = root
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_equipment = {
+				infantry_equipment > 299
+			}
+			has_equipment = {
+				artillery_equipment > 49
+			}
+		}
+		random_list = {
+			20 = {
+				country_event = gsk_hire_event.92
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -50
+					producer = root
+				}
+			}
+			20 = {
+				country_event = gsk_hire_event.95
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -300
+					producer = root
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_equipment = {
+				infantry_equipment > 299
+			}
+			has_equipment = {
+				support_equipment > 49
+			}
+		}
+		random_list = {
+			20 = {
+				country_event = gsk_hire_event.94
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -50
+					producer = root
+				}
+			}
+			20 = {
+				country_event = gsk_hire_event.95
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -300
+					producer = root
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_equipment = {
+				infantry_equipment > 299
+			}
+		}
+		country_event = gsk_hire_event.95
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -300
+			producer = root
+		}
+	}
+	else_if = {
+		limit = {
+			has_equipment = {
+				support_equipment > 49
+			}
+		}
+		country_event = gsk_hire_event.94
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -50
+			producer = root
+		}
+	}
+	else_if = {
+		limit = {
+			has_equipment = {
+				gsk_equipment_frog0 > 49
+			}
+		}
+		country_event = gsk_hire_event.91
+		add_equipment_to_stockpile = {
+			type = gsk_equipment_frog0
+			amount = -50
+			producer = root
+		}
+	}
+	else_if = {
+		limit = {
+			has_equipment = {
+				artillery_equipment > 49
+			}
+		}
+		country_event = gsk_hire_event.92
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = -50
+			producer = root
+		}
+	}
+	else_if = {
+		limit = {
+			has_equipment = {
+				motorized_equipment > 49
+			}
+		}
+		country_event = gsk_hire_event.93
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = -50
+			producer = root
+		}
+	}
+	else_if = {
+		limit = { 
+			has_equipment = {
+				infantry_equipment < 300
+			}
+			has_equipment = {
+				artillery_equipment < 50
+			}
+			has_equipment = {
+				support_equipment < 50
+			}
+			has_equipment = {
+				motorized_equipment < 50
+			}
+			has_equipment = {
+				gsk_equipment_frog0 < 50
+			}
+		}
+		country_event = gsk_hire_event.96
+	}
+}
+
+gsk_yoyoku_rank_promotion = {
+	every_unit_leader = {
+		limit = {
+			OR = {
+				has_trait = yuyuko_commander_peculiarity2
+				has_trait = yuyuko_commander_peculiarity0
+				has_trait = yuyuko_commander_peculiarity1
+			}
+		}
+		if = {
+			limit = {
+				has_trait = yuyuko_commander_peculiarity2
+			}
+			remove_unit_leader_trait = yuyuko_commander_peculiarity2
+			add_unit_leader_trait = yuyuko_commander_peculiarity3
+		}
+		else_if = {
+			limit = {
+				has_trait = yuyuko_commander_peculiarity1
+			}
+			remove_unit_leader_trait = yuyuko_commander_peculiarity1
+			add_unit_leader_trait = yuyuko_commander_peculiarity2
+		}
+		else_if = {
+			limit = {
+				has_trait = yuyuko_commander_peculiarity0
+			}
+			remove_unit_leader_trait = yuyuko_commander_peculiarity0
+			add_unit_leader_trait = yuyuko_commander_peculiarity1
+		}
+	}
+}
+
+gsk_increase_houraisan_med = {
+	if = {
+		limit = {
+			has_trait = gsk_houraisan_med1
+		}
+		remove_unit_leader_trait = gsk_houraisan_med1
+		add_unit_leader_trait = gsk_houraisan_med2
+	}
+	else_if = {
+		limit = {
+			has_trait = gsk_houraisan_med0
+		}
+		remove_unit_leader_trait = gsk_houraisan_med0
+		add_unit_leader_trait = gsk_houraisan_med1
+	}
+	else_if = {
+		limit = {
+			not = {
+				has_trait = gsk_houraisan_med0
+			}
+		}
+		add_unit_leader_trait = gsk_houraisan_med0
+	}
+}
+
+gsk_increase_kaguya_design_bureau_idae = {
+	if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae4 }
+		swap_ideas = {
+			remove_idea = gsk_kaguya_design_bureau_idae4
+			add_idea = gsk_kaguya_design_bureau_idae5
+		}
+	}
+	else_if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae3 }
+		swap_ideas = {
+			remove_idea = gsk_kaguya_design_bureau_idae3
+			add_idea = gsk_kaguya_design_bureau_idae4
+		}
+	}
+	else_if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae2 }
+		swap_ideas = {
+			remove_idea = gsk_kaguya_design_bureau_idae2
+			add_idea = gsk_kaguya_design_bureau_idae3
+		}
+	}
+	else_if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae1 }
+		swap_ideas = {
+			remove_idea = gsk_kaguya_design_bureau_idae1
+			add_idea = gsk_kaguya_design_bureau_idae2
+		}
+	}
+	else_if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae0 }
+		swap_ideas = {
+			remove_idea = gsk_kaguya_design_bureau_idae0
+			add_idea = gsk_kaguya_design_bureau_idae1
+		}
+	}
+	else_if = {
+		limit = { not =  { has_idea = gsk_kaguya_design_bureau_idae0 } }
+		add_ideas = gsk_kaguya_design_bureau_idae0
+	}
+}
+
+gsk_decrease_kaguya_design_bureau_idae = {
+	if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae0 }
+		remove_ideas = gsk_kaguya_design_bureau_idae0
+	}
+	else_if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae1 }
+		swap_ideas = {
+			remove_idea = gsk_kaguya_design_bureau_idae1
+			add_idea = gsk_kaguya_design_bureau_idae0
+		}
+	}
+	else_if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae2 }
+		swap_ideas = {
+			remove_idea = gsk_kaguya_design_bureau_idae2
+			add_idea = gsk_kaguya_design_bureau_idae1
+		}
+	}
+	else_if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae3 }
+		swap_ideas = {
+			remove_idea = gsk_kaguya_design_bureau_idae3
+			add_idea = gsk_kaguya_design_bureau_idae2
+		}
+	}
+	else_if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae4 }
+		swap_ideas = {
+			remove_idea = gsk_kaguya_design_bureau_idae4
+			add_idea = gsk_kaguya_design_bureau_idae3
+		}
+	}
+	else_if = {
+		limit = { has_idea = gsk_kaguya_design_bureau_idae5 }
+		swap_ideas = {
+			remove_idea = gsk_kaguya_design_bureau_idae5
+			add_idea = gsk_kaguya_design_bureau_idae4
+		}
+	}
+}
+
+gsk_create_satori_operative = {
+	create_operative_leader = {
+		name = satori_name
+		traits = { 
+			satori_spy_peculiarity 
+			operative_infiltrator
+			operative_seducer
+			operative_natural_orator
+		}
+		female = yes
+		bypass_recruitment = yes
+		nationalities = { ROOT GSK }
+		GFX = GFX_portrait_satori_intel
+	}
+}
+
+gsk_create_koishi_operative = {
+	create_operative_leader = {
+		name = koishi_name
+		traits = { 
+			koishi_spy_peculiarity
+			operative_infiltrator
+			operative_seducer
+			operative_escape_artist
+		}	
+		female = yes
+		bypass_recruitment = yes
+		nationalities = { ROOT GSK }
+		GFX = GFX_portrait_koishi_intel
+	}
+}
+
+gsk_check_alice_canbe_recruit = {
+	if = {
+		limit = {
+			is_ai = no
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = marisa_is_recruit_flag
+			has_country_flag = patchouli_is_recruit_flag
+			not = {
+				OR = {
+					has_country_flag = gsk_alice_is_recruit_flag
+					has_country_flag = gsk_alice_is_recruit_flag1
+				}
+			}
+		}
+		country_event = {
+			days = 20
+			id = gsk_main_event.60
+		}
+	}
+}

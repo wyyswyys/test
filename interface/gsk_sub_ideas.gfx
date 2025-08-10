@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_gsk_kourindou_design_bureau"
+		texturefile = "gfx/ideas/idea_gsk_kourindou_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_youmu_design_bureau"
+		texturefile = "gfx/ideas/idea_gsk_youmu_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_kapa_design_bureau"
+		texturefile = "gfx/ideas/idea_gsk_kapa_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_hakurei_design_bureau"
+		texturefile = "gfx/ideas/idea_gsk_hakurei_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_kogasa_design_bureau"
+		texturefile = "gfx/ideas/idea_gsk_kogasa_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_kaguya_design_bureau"
+		texturefile = "gfx/ideas/idea_gsk_kaguya_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_industrial_concern"
+		texturefile = "gfx/interface/ideas/idea_gsk_industrial_concern.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_cdut"
+		texturefile = "gfx/interface/ideas/idea_gsk_cdut.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_tech"
+		texturefile = "gfx/interface/ideas/idea_gsk_tech.dds"
+	}
+}

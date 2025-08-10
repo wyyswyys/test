@@ -1,0 +1,1987 @@
+every_possible_country = {
+	limit = {
+		
+	}
+	
+	generate_character = {#蕾米莉亚
+		token_base = gsk_commander_remilia
+		name = remilia_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_remilia.dds"
+				small="gfx/ideas/gsk_ideas_remilia.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		field_marshal={
+			traits = {
+				from_gsk
+				remilia_commander_peculiarity
+				gsk_race_vampires
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = remilia_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_remilia
+			ledger = army
+			desc = advisor_remilia_desc
+			cost = 150
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = remilia_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_remilia
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#咲夜
+		token_base = gsk_commander_sakuya
+		name = sakuya_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_sakuya.dds"
+				small="gfx/ideas/gsk_ideas_sakuya.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				sakuya_commander_peculiarity
+				gsk_race_human
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = sakuya_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = gsk_advisor_sakuya
+			ledger = army
+			desc = advisor_sakuya_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = sakuya_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_sakuya
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#芙兰朵露
+		token_base = gsk_commander_flandre
+		name = flandre_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_flandre.dds"
+				small="gfx/ideas/gsk_ideas_flandre.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				flandre_commander_peculiarity
+				gsk_race_vampires
+				trait_reckless
+			}
+			attack_skill = 6
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = flandre_is_recruit_flag
+			}
+		}
+	}
+	generate_character = {#9
+		token_base = gsk_commander_cirno
+		name = cirno_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_cirno.dds"
+				small="gfx/ideas/gsk_ideas_cirno.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				cirno_commander_peculiarity
+				gsk_race_evil_spirit
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 5
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = cirno_is_recruit_flag
+			}
+		}
+	}
+	generate_character = {#姆Q
+		token_base = gsk_commander_patchouli
+		name = patchouli_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_patchouli.dds"
+				small="gfx/ideas/gsk_ideas_patchouli.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				patchouli_commander_peculiarity
+				gsk_race_wizard
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = patchouli_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = gsk_advisor_patchouli
+			ledger = army
+			desc = advisor_patchouli_desc
+			cost = 150
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = patchouli_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_patchouli
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			visible = {
+				owner = {
+					is_ai = no
+					has_country_flag = patchouli_is_recruit_flag
+					has_country_flag = gsk_system_is_enable_flag
+				}
+			}
+			traits = {
+				scientist_trait_patchouli
+				scientist_trait_genius
+				scientist_trait_brilliant_theorist
+				scientist_trait_nuclear_specialist
+			}
+			skills = {
+				specialization_nuclear = 3
+			}
+		}
+	}
+	generate_character = {#阿求
+		token_base = gsk_commander_akyuu
+		name = akyuu_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_akyuu.dds"
+				small="gfx/ideas/gsk_ideas_akyuu.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_human
+				akyuu_commander_peculiarity
+			}
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			skill = 3
+			visible = {
+				is_ai = no
+				has_country_flag = akyuu_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_akyuu
+			ledger = army
+			desc = advisor_akyuu_desc
+			cost = 150
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = akyuu_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_akyuu
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			visible = { 
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = akyuu_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_akyuu
+				scientist_trait_genius
+				scientist_trait_electronics_specialist
+				scientist_trait_bombs_expert
+			}
+			skills = {
+				specialization_air = 1
+			}
+		}
+	}
+	generate_character = {#慧音
+		token_base = gsk_commander_keine
+		name = keine_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_keine.dds"
+				small="gfx/ideas/gsk_ideas_keine.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_orc
+				keine_commander_peculiarity
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = keine_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_keine
+			ledger = army
+			desc = advisor_keine_desc
+			cost = 150
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = keine_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_keine
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			visible = { 
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = keine_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_keine
+				scientist_trait_brilliant_theorist
+				scientist_trait_nuclear_warfare_expert
+				scientist_trait_nuclear_power_expert
+			}
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+	generate_character = {#灵梦
+		token_base = gsk_commander_reimu
+		name = reimu_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_reimu.dds"
+				small="gfx/ideas/gsk_ideas_reimu.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_human
+				reimu_commander_peculiarity
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = reimu_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = gsk_advisor_reimu
+			ledger = army
+			desc = advisor_reimu_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = reimu_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_reimu
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			visible = {
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = reimu_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_reimu
+				scientist_trait_genius
+				scientist_trait_helicopter_expert
+				scientist_trait_aircraft_specialist
+			}
+			skills = {
+				specialization_air = 1
+			}
+		}
+	}
+	generate_character = {#魔理沙
+		token_base = gsk_commander_marisa
+		name = marisa_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_marisa.dds"
+				small="gfx/ideas/gsk_ideas_marisa.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_human
+				marisa_commander_peculiarity
+				scavenger
+			}
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = marisa_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = gsk_advisor_marisa
+			ledger = army
+			desc = advisor_marisa_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = marisa_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_marisa
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#爱丽丝
+		token_base = gsk_commander_alice_navy
+		name = gsk_alice_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_alice.dds"
+				small="gfx/ideas/gsk_ideas_alice.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		navy_leader={
+			traits = {
+				from_gsk_navy
+				gsk_race_wizard_navy
+				gsk_alice_commander_peculiarity_navy
+			}
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 5
+			coordination_skill = 5
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_alice_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = gsk_advisor_alice
+			ledger = army
+			desc = gsk_advisor_alice_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				OR = {
+					has_country_flag = gsk_alice_is_recruit_flag
+					has_country_flag = gsk_alice_is_recruit_flag1
+				}
+			}
+			traits = {
+				gsk_advisor_alice
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#爱丽丝
+		token_base = gsk_commander_alice
+		name = gsk_alice_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_alice.dds"
+				small="gfx/ideas/gsk_ideas_alice.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_wizard
+				gsk_alice_commander_peculiarity
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 5
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_alice_is_recruit_flag1
+			}
+		}
+	}
+	generate_character = {#早苗
+		token_base = gsk_commander_sanae
+		name = sanae_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_sanae.dds"
+				small="gfx/ideas/gsk_ideas_sanae.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_human
+				sanae_commander_peculiarity
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = sanae_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = gsk_advisor_sanae
+			ledger = army
+			desc = advisor_sanae_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = sanae_is_recruit_flag
+				has_country_flag = gsk_hire_event72_temp
+			}
+			traits = {
+				gsk_advisor_sanae
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#诹访子
+		token_base = gsk_commander_suwako
+		name = suwako_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_suwako.dds"
+				small="gfx/ideas/gsk_ideas_suwako.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				suwako_commander_peculiarity
+				gsk_race_god
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = suwako_is_recruit_flag
+			}
+		}
+	}
+	generate_character = {#神奈子
+		token_base = gsk_commander_kanako
+		name = kanako_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_kanako.dds"
+				small="gfx/ideas/gsk_ideas_kanako.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		field_marshal={
+			traits = {
+				from_gsk
+				kanako_commander_peculiarity
+				gsk_race_god
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = kanako_is_recruit_flag
+			}
+		}
+		scientist = {
+			visible = {
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = kanako_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_kanako
+				scientist_trait_brilliant_theorist
+				scientist_trait_armored_specialist
+				scientist_trait_artillery_specialist
+			}
+			skills = {
+				specialization_land = 4
+			}
+		}
+	}
+	generate_character = {#文文
+		token_base = gsk_commander_aya
+		name = aya_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_aya.dds"
+				small="gfx/ideas/gsk_ideas_aya.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_heavenly_dog
+				aya_commander_peculiarity
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = aya_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_aya
+			ledger = army
+			desc = advisor_aya_desc
+			cost = 50
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = aya_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_aya
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			visible = {
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = aya_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_aya
+				scientist_trait_bright
+				scientist_trait_jet_expert
+				scientist_trait_rocketry_specialist
+			}
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+	generate_character = {#觉
+		token_base = gsk_commander_satori
+		name = satori_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_satori.dds"
+				small="gfx/ideas/gsk_ideas_satori.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_satori
+				satori_commander_peculiarity
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = satori_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_satori
+			ledger = army
+			desc = advisor_satori_desc
+			cost = 150
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = satori_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_satori
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#恋
+		token_base = gsk_commander_koishi
+		name = koishi_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_koishi.dds"
+				small="gfx/ideas/gsk_ideas_koishi.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_satori
+				koishi_commander_peculiarity
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = koishi_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_koishi
+			ledger = army
+			desc = advisor_koishi_desc
+			cost = 150
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = koishi_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_koishi
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#妖梦
+		token_base = gsk_commander_youmu
+		name = youmu_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_youmu.dds"
+				small="gfx/ideas/gsk_ideas_youmu.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_hghost
+				youmu_commander_peculiarity
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = youmu_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = gsk_advisor_youmu
+			ledger = army
+			desc = advisor_youmu_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = youmu_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_youmu
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			visible = { 
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = keine_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_youmu
+				scientist_trait_gifted_engineer
+				scientist_trait_artillery_specialist
+				scientist_trait_guidance_systems_expert
+			}
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+	generate_character = {#幽幽子
+		token_base = gsk_commander_yuyuko
+		name = yuyuko_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_yuyuko.dds"
+				small="gfx/ideas/gsk_ideas_yuyuko.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_ghost
+				yuyuko_commander_peculiarity0
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = yuyuko_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_yuyuko
+			ledger = army
+			desc = advisor_yuyuko_desc
+			cost = 150
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = yuyuko_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_yuyuko
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#铃仙
+		token_base = gsk_commander_reisen
+		name = reisen_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_reisen.dds"
+				small="gfx/ideas/gsk_ideas_reisen.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_moonrabbit
+				reisen_commander_peculiarity
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = reisen_is_recruit_flag
+				not  = { has_country_flag = reisen_is_assit_flag }
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = gsk_advisor_reisen
+			ledger = army
+			desc = advisor_reisen_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = reisen_is_recruit_flag
+				not  = { has_country_flag = reisen_is_assit_flag }
+			}
+			traits = {
+				gsk_advisor_reisen
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#帝
+		token_base = gsk_commander_tewi
+		name = tewi_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_tewi.dds"
+				small="gfx/ideas/gsk_ideas_tewi.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		navy_leader={
+			traits = {
+				from_gsk_navy
+				gsk_race_rabbit_navy
+				tewi_commander_peculiarity_navy
+			}
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = tewi_is_recruit_flag
+			}
+		}
+	}
+	generate_character = {#辉夜
+		token_base = gsk_commander_kaguya
+		name = kaguya_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_kaguya.dds"
+				small="gfx/ideas/gsk_ideas_kaguya.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		navy_leader={
+			traits = {
+				from_gsk_navy
+				gsk_race_moon_navy
+				kaguya_commander_peculiarity_navy
+			}
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = kaguya_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = gsk_advisor_kaguya
+			ledger = army
+			desc = advisor_kaguya_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = kaguya_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_kaguya
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#永琳
+		token_base = gsk_commander_yagokoro
+		name = yagokoro_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_yagokoro.dds"
+				small="gfx/ideas/gsk_ideas_yagokoro.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		field_marshal = {
+			traits = {
+				from_gsk
+				gsk_race_moon
+				yagokoro_commander_peculiarity
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = yagokoro_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = gsk_advisor_yagokoro
+			ledger = army
+			desc = advisor_yagokoro_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = yagokoro_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_yagokoro
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			visible = {
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = yagokoro_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_yagokoro
+				scientist_trait_brilliant_theorist
+				scientist_trait_surface_ship_specialist
+				scientist_trait_submarine_specialist
+			}
+			skills = {
+				specialization_naval = 5
+			}
+		}
+	}
+	generate_character = {#妹红
+		token_base = gsk_commander_mokou
+		name = mokou_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_mokou.dds"
+				small="gfx/ideas/gsk_ideas_mokou.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander = {
+			traits = {
+				from_gsk
+				gsk_race_ismoon
+				mokou_commander_peculiarity
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = mokou_is_recruit_flag
+			}
+		}
+	}
+	generate_character = {#小伞
+		token_base = gsk_commander_kogasa
+		name = kogasa_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_kogasa.dds"
+				small="gfx/ideas/gsk_ideas_kogasa.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		navy_leader={
+			traits = {
+				from_gsk_navy
+				gsk_race_tsukumogami_navy
+				kogasa_commander_peculiarity_navy
+			}
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = kogasa_is_recruit_flag
+			}
+		}
+	}
+	generate_character = {#秦心
+		token_base = gsk_commander_kokoro
+		name = kokoro_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_kokoro.dds"
+				small="gfx/ideas/gsk_ideas_kokoro.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		navy_leader={
+			traits = {
+				from_gsk_navy
+				gsk_race_tsukumogami_navy
+				kokoro_commander_peculiarity_navy
+			}
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = kokoro_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_kokoro
+			ledger = army
+			desc = advisor_kokoro_desc
+			cost = 150
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = koishi_is_recruit_flag
+				has_country_flag = kokoro_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_kokoro
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#油咖喱
+		token_base = gsk_commander_yukari
+		name = yukari_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_yukari.dds"
+				small="gfx/ideas/gsk_ideas_yukari.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		field_marshal = {
+			traits = {
+				from_gsk
+				gsk_race_bogeyman
+				yukari_commander_peculiarity
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = yukari_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = gsk_advisor_yukari
+			ledger = army
+			desc = advisor_yukari_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = yukari_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_yukari
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#天子
+		token_base = gsk_commander_tenshi
+		name = tenshi_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_tenshi.dds"
+				small="gfx/ideas/gsk_ideas_tenshi.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_celestial
+				tenshi_commander_peculiarity
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = tenshi_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = gsk_advisor_tenshi
+			ledger = army
+			desc = advisor_tenshi_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = tenshi_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_tenshi
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#幽香
+		token_base = gsk_commander_yuka
+		name = yuka_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_yuka.dds"
+				small="gfx/ideas/gsk_ideas_yuka.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander = {
+			traits = {
+				from_gsk
+				gsk_race_bogeyman
+				yuka_commander_peculiarity
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = yuka_is_recruit_flag
+			}
+		}
+	}
+	generate_character = {#四季
+		token_base = gsk_commander_shikieiki
+		name = shikieiki_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_shikieiki.dds"
+				small="gfx/ideas/gsk_ideas_shikieiki.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_yama
+				shikieiki_commander_peculiarity
+			}
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+			skill = 5
+			visible = { 
+				is_ai = no
+				has_country_flag = shikieiki_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = gsk_advisor_shikieiki
+			ledger = army
+			desc = advisor_shikieiki_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = shikieiki_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_shikieiki
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#本居小铃
+		token_base = gsk_commander_kosuzu
+		name = kosuzu_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_kosuzu.dds"
+				small="gfx/ideas/gsk_ideas_kosuzu.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander={
+			traits = {
+				from_gsk
+				gsk_race_human
+				kosuzu_commander_peculiarity
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			skill = 1
+			visible = { 
+				is_ai = no
+				has_country_flag = kosuzu_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = gsk_advisor_kosuzu
+			ledger = army
+			desc = advisor_kosuzu_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = kosuzu_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_kosuzu
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#莲子
+		token_base = gsk_commander_renko
+		name = renko_name
+		portraits={
+			army={
+				large= "GFX_portrait_renko"
+				small="gfx/ideas/gsk_ideas_renko.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander = {
+			traits = {
+				from_gsk
+				gsk_race_human
+				renko_commander_peculiarity
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+			skill = 3
+			visible = {
+				is_ai = no
+				has_country_flag = renko_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_renko
+			ledger = army
+			desc = advisor_renko_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = renko_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_renko
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			# on_add = {
+			# 	FROM = {
+			# 		set_temp_variable = {
+			# 			var = academic_development_var_temp 
+			# 			value = 0.01
+			# 		}
+			# 		add_academic_development = yes
+			# 		set_temp_variable = {
+			# 			var = industrial_development_var_temp 
+			# 			value = 0.01
+			# 		}
+			# 		add_industrial_development = yes
+			# 	}
+			# }
+			# on_remove = {
+			# 	FROM = {
+			# 		set_temp_variable = {
+			# 			var = academic_development_var_temp 
+			# 			value = -0.01
+			# 		}
+			# 		add_academic_development = yes
+			# 		set_temp_variable = {
+			# 			var = industrial_development_var_temp 
+			# 			value = -0.01
+			# 		}
+			# 		add_industrial_development = yes
+			# 	}
+			# }
+		}
+		scientist = {
+			visible = {
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = renko_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_renko
+				scientist_trait_genius
+			}
+			skills = {
+				specialization_nuclear = 1
+			}
+		}
+	}
+	generate_character = { #梅莉
+		token_base = gsk_commander_hearn
+		name = hearn_name
+		portraits={
+			army={
+				large="gfx/leaders/gsk_leader_hearn.dds"
+				small="gfx/ideas/gsk_ideas_hearn.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander = {
+			traits = {
+				from_gsk
+				gsk_race_human
+				hearn_commander_peculiarity
+			}
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+			skill = 3
+			visible = { 
+				is_ai = no
+				has_country_flag = hearn_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_hearn
+			ledger = army
+			desc = advisor_hearn_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = hearn_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_hearn
+			}
+			on_add = {
+				FROM = {
+					every_unit_leader = {
+						limit = {
+							has_trait = renko_commander_peculiarity
+						}
+						remove_unit_leader_trait = renko_commander_peculiarity
+						add_unit_leader_trait = renko_commander_peculiarity1
+					}
+					# set_temp_variable = {
+					# 	var = society_development_var_temp 
+					# 	value = 0.01
+					# }
+					# add_society_development = yes
+				}
+				custom_effect_tooltip = gsk_advisor_hearn_tt
+			}
+			on_remove = {
+				FROM = {
+					every_unit_leader = {
+						limit = {
+							has_trait = renko_commander_peculiarity1
+						}
+						remove_unit_leader_trait = renko_commander_peculiarity1
+						add_unit_leader_trait = renko_commander_peculiarity
+					}
+					# set_temp_variable = {
+					# 	var = society_development_var_temp 
+					# 	value = -0.01
+					# }
+					# add_society_development = yes
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			visible = {
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = hearn_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_hearn
+				scientist_trait_genius
+			}
+			skills = {
+				specialization_land = 1
+			}
+		}
+	}
+	generate_character = {#清兰
+		token_base = gsk_commander_seiran
+		name = seiran_name
+		portraits={
+			army={
+				large= "GFX_portrait_seiran"
+				small="gfx/ideas/gsk_ideas_seiran.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander = {
+			traits = {
+				from_gsk
+				gsk_race_moonrabbit
+				seiran_commander_peculiarity
+			}
+			attack_skill = 1
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 2
+			skill = 3
+			visible = {
+				is_ai = no
+				has_country_flag = seiran_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_seiran
+			ledger = army
+			desc = advisor_seiran_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = seiran_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_seiran
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#铃瑚
+		token_base = gsk_commander_ringo
+		name = ringo_name
+		portraits={
+			army={
+				large= "GFX_portrait_ringo"
+				small="gfx/ideas/gsk_ideas_ringo.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		navy_leader = {
+			traits = {
+				from_gsk_navy
+				gsk_race_moonrabbit_navy
+				ringo_commander_peculiarity_navy
+			}
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+			skill = 3
+			visible = {
+				is_ai = no
+				has_country_flag = renko_is_recruit_flag
+			}
+		}
+	}
+	generate_character = {#哆来咪
+		token_base = gsk_commander_doremy
+		name = doremy_name
+		portraits={
+			army={
+				large= "GFX_portrait_doremy"
+				small="gfx/ideas/gsk_ideas_doremy.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		navy_leader = {
+			traits = {
+				from_gsk_navy
+				gsk_race_tapir_navy
+				doremy_commander_peculiarity_navy
+			}
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+			skill = 3
+			visible = {
+				is_ai = no
+				has_country_flag = doremy_is_recruit_flag
+			}
+		}
+		scientist = {
+			visible = {
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = doremy_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_doremy
+				scientist_trait_submarine_specialist
+			}
+			skills = {
+				specialization_naval = 3
+			}
+		}
+	}
+	generate_character = {#稀神探女
+		token_base = gsk_commander_sagume
+		name = sagume_name
+		portraits={
+			army={
+				large= "GFX_portrait_sagume"
+				small="gfx/ideas/gsk_ideas_sagume.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander = {
+			traits = {
+				from_gsk
+				gsk_race_moon
+				sagume_commander_peculiarity
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			skill = 3
+			visible = {
+				is_ai = no
+				has_country_flag = sagume_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gsk_advisor_sagume
+			ledger = army
+			desc = advisor_sagume_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = sagume_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_sagume
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		scientist = {
+			visible = {
+				owner = {
+					is_ai = no
+					has_country_flag = gsk_system_is_enable_flag
+					has_country_flag = sagume_is_recruit_flag
+				}
+			}
+			traits = {
+				scientist_trait_sagume
+				scientist_trait_aircraft_specialist
+
+			}
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+	generate_character = {#克劳恩皮丝
+		token_base = gsk_commander_clownpiece
+		name = clownpiece_name
+		portraits={
+			army={
+				large= "GFX_portrait_clownpiece"
+				small="gfx/ideas/gsk_ideas_clownpiece.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		corps_commander = {
+			traits = {
+				from_gsk
+				gsk_race_evil_spirit
+				clownpiece_commander_peculiarity
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			skill = 3
+			visible = {
+				is_ai = no
+				has_country_flag = clownpiece_is_recruit_flag
+			}
+		}
+	}
+	generate_character = {#纯狐
+		token_base = gsk_commander_junko
+		name = junko_name
+		portraits={
+			army={
+				large= "GFX_portrait_junko"
+				small="gfx/ideas/gsk_ideas_junko.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		field_marshal = {
+			traits = {
+				from_gsk
+				gsk_race_god
+				junko_commander_peculiarity
+			}
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 4
+			skill = 3
+			visible = {
+				is_ai = no
+				has_country_flag = junko_is_recruit_flag
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = gsk_advisor_junko
+			ledger = army
+			desc = advisor_junko_desc
+			cost = 100
+			visible = { 
+				is_ai = no
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = junko_is_recruit_flag
+			}
+			traits = {
+				gsk_advisor_junko
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	generate_character = {#赫卡提亚
+		token_base = gsk_commander_hecatia
+		name = hecatia_name
+		portraits={
+			army={
+				large= "GFX_portrait_hecatia"
+				small="gfx/ideas/gsk_ideas_hecatia.dds"
+			}
+		}
+		allowed_civil_war = {
+			is_ai = no
+		}
+		field_marshal = {
+			traits = {
+				from_gsk
+				gsk_race_god
+				hecatia_commander_peculiarity
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+			skill = 3
+			visible = {
+				is_ai = no
+				has_country_flag = hecatia_is_recruit_flag
+			}
+		}
+	}
+
+
+}

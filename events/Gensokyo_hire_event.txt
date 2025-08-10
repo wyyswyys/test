@@ -1,0 +1,607 @@
+#采用gsk_hire_event.310格式的事件，均为弃用隐藏事件
+
+add_namespace = gsk_hire_event
+country_event = {
+	id = gsk_hire_event.31
+	title = gsk_hire_event.31.t
+	desc = gsk_hire_event.31.d
+	picture = gsk_main_event.30.p
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = gsk_hire_event.31.a
+		set_country_flag = flandre_is_recruit_flag
+		set_country_flag = patchouli_is_recruit_flag
+		custom_effect_tooltip = gsk_hire_event.31.a.tt
+		gsk_increase_embodiment_idea = yes
+		hidden_effect = {
+			country_event = {
+				id = gsk_hire_event.32
+				days = 3
+			}
+			gsk_check_alice_canbe_recruit = yes
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = gsk_hire_event.32
+	title = gsk_hire_event.32.t
+	desc = gsk_hire_event.32.d
+	picture = gsk_hire_event.32.p
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+		launch_nuke = {
+			state = root.capital
+			controller = root
+			use_nuke = yes
+			nuke_type = nuclear_bomb
+		}
+	}
+	option = {
+		name = gsk_hire_event.32.a
+		add_timed_idea = {
+			idea = gsk_sakuya_fix_idea0
+			days = 30
+		}
+		hidden_effect = {
+			
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = gsk_hire_event.33
+	title = gsk_hire_event.33.t
+	desc = gsk_hire_event.33.d
+	picture = gsk_hire_event.33.p
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = gsk_hire_event.33.a
+		custom_effect_tooltip = gsk_hire_event.33.a.tt
+		set_country_flag = cirno_is_recruit_flag
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = gsk_hire_event.34
+	title = gsk_hire_event.34.t
+	desc = gsk_hire_event.34.d
+	picture = gsk_hire_event.34.p
+	fire_only_once = no
+	hidden = no
+	is_triggered_only = yes
+	trigger = {
+		# has_tech = antitank2
+		# has_country_flag = remilia_is_recruit_flag
+		# has_country_flag = gsk_recruit_character_interaction_vis
+	}
+	immediate = {
+	}
+	option = {
+		name = gsk_hire_event.34.a
+		custom_effect_tooltip = gsk_hire_event.34.a.tt
+		gsk_increase_embodiment_idea = yes
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			technology = sp_artillery2
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+# country_event = {
+# 	id = gsk_hire_event.340
+# 	title = gsk_hire_event.340.t
+# 	desc = gsk_hire_event.340.d
+# 	fire_only_once = no
+# 	hidden = yes
+# 	is_triggered_only = no
+# 	trigger = {
+# 		tag = root
+# 		has_tech = antitank2
+# 		has_country_flag = remilia_is_recruit_flag
+# 		has_country_flag = gsk_recruit_character_interaction_unvis
+# 	}
+# 	immediate = {
+# 		gsk_increase_embodiment_idea = yes
+# 		add_tech_bonus = {
+# 			bonus = 0.5
+# 			uses = 1
+# 			technology = antitank3
+# 		}
+# 	}
+# 	option = {
+# 	}
+# }
+country_event = {
+	id = gsk_hire_event.35
+	title = gsk_hire_event.35.t
+	desc = gsk_hire_event.35.d
+	picture = gsk_hire_event.35.p
+	hidden = no
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+		# has_country_flag = remilia_is_recruit_flag
+		# date > 1936.1.2
+		# has_offensive_war = yes
+		# has_country_flag = gsk_recruit_character_interaction_vis
+	}
+	immediate = {
+	}
+	option = {
+		name = gsk_hire_event.35.a
+		custom_effect_tooltip = gsk_hire_event.34.a.tt
+		gsk_increase_embodiment_idea = yes
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+# country_event = {
+# 	id = gsk_hire_event.350
+# 	title = gsk_hire_event.350.t
+# 	desc = gsk_hire_event.350.d
+# 	hidden = yes
+# 	fire_only_once = yes
+# 	is_triggered_only = no
+# 	trigger = {
+# 		has_country_flag = remilia_is_recruit_flag
+# 		tag = root
+# 		date > 1936.1.2
+# 		has_offensive_war = yes
+# 		has_country_flag = gsk_recruit_character_interaction_unvis
+# 	}
+# 	immediate = {
+# 		set_country_flag = gsk_hire_event35_temp
+# 		remove_decision = embodiment_of_Scarlet_Devil_quest3
+# 		gsk_increase_embodiment_idea = yes
+# 	}
+# }
+
+country_event = {#弹幕规则
+	id = gsk_hire_event.41
+	title = gsk_hire_event.41.t
+	desc = gsk_hire_event.41.d
+	#picture = gsk_hire_event.41.p
+	hidden = no
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = gsk_hire_event.41.a
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#胜利
+	id = gsk_hire_event.410
+	title = gsk_hire_event.410.t
+	desc = gsk_hire_event.410.d
+	#picture = gsk_hire_event.41.p
+	hidden = no
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_to_variable = {
+				value = 1
+				var = gsk_var_kosuzu_win_times
+			}
+		}
+	}
+	option = {
+		name = gsk_hire_event.410.a
+		add_war_support = 0.03
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#平手
+	id = gsk_hire_event.411
+	title = gsk_hire_event.411.t
+	desc = gsk_hire_event.411.d
+	#picture = gsk_hire_event.41.p
+	hidden = no
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = gsk_hire_event.411.a
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#失败
+	id = gsk_hire_event.412
+	title = gsk_hire_event.412.t
+	desc = gsk_hire_event.412.d
+	#picture = gsk_hire_event.41.p
+	hidden = no
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_to_variable = {
+				value = -1
+				var = gsk_var_kosuzu_win_times
+			}
+		}
+	}
+	option = {
+		name = gsk_hire_event.412.a
+		add_war_support = -0.03
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = gsk_hire_event.71
+	title = gsk_hire_event.71.t
+	desc = gsk_hire_event.71.d
+	picture = gsk_hire_event.71.p
+	hidden = no
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+	}
+	option = {
+		name = gsk_hire_event.71.a
+		set_country_flag = aya_is_recruit_flag
+		custom_effect_tooltip = gsk_hire_event.71.a.tt
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = gsk_hire_event.72
+	title = gsk_hire_event.72.t
+	desc = gsk_hire_event.72.d
+	picture = gsk_hire_event.72.p
+	hidden = no
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+		# has_country_flag = sanae_is_recruit_flag
+		# has_tech = improved_heavy_tank_chassis
+		# has_country_flag = gsk_recruit_character_interaction_vis
+	}
+	immediate = {
+		set_country_flag = gsk_hire_event72_temp
+	}
+	option = {
+		name = gsk_hire_event.72.a
+		custom_effect_tooltip = gsk_hire_event.72.a.tt
+		add_breakthrough_points = {
+			specialization = specialization_land
+			value = 1
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			ahead_reduction = 6
+			technology = main_battle_tank_chassis
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+# country_event = {
+# 	id = gsk_hire_event.720
+# 	title = gsk_hire_event.720.t
+# 	desc = gsk_hire_event.720.d
+# 	hidden = yes
+# 	fire_only_once = yes
+# 	is_triggered_only = no
+# 	trigger = {
+# 		has_country_flag = sanae_is_recruit_flag
+# 		tag = root
+# 		has_tech = improved_heavy_tank_chassis
+# 		has_country_flag = gsk_recruit_character_interaction_unvis
+# 	}
+# 	immediate = {
+# 		set_country_flag = gsk_hire_event72_temp
+# 		add_tech_bonus = {
+# 			bonus = 1
+# 			uses = 1
+# 			ahead_reduction = 2
+# 			technology = super_heavy_tank_chassis
+# 		}
+# 	}
+# }
+country_event = {#头饰
+	id = gsk_hire_event.91
+	title = gsk_hire_event.91.t
+	desc = gsk_hire_event.91.d
+	picture = gsk_hire_event.91.p
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			gsk_yoyoku_rank_promotion = yes
+		}
+	}
+	option = {
+		name = gsk_hire_event.91.a
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#炮
+	id = gsk_hire_event.92
+	title = gsk_hire_event.92.t
+	desc = gsk_hire_event.92.d
+	picture = gsk_hire_event.91.p
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			gsk_yoyoku_rank_promotion = yes
+		}
+	}
+	option = {
+		name = gsk_hire_event.91.a
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#摩托化
+	id = gsk_hire_event.93
+	title = gsk_hire_event.93.t
+	desc = gsk_hire_event.93.d
+	picture = gsk_hire_event.91.p
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			gsk_yoyoku_rank_promotion = yes
+		}
+	}
+	option = {
+		name = gsk_hire_event.91.a
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#支援
+	id = gsk_hire_event.94
+	title = gsk_hire_event.94.t
+	desc = gsk_hire_event.94.d
+	picture = gsk_hire_event.91.p
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			gsk_yoyoku_rank_promotion = yes
+		}
+	}
+	option = {
+		name = gsk_hire_event.91.a
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#枪
+	id = gsk_hire_event.95
+	title = gsk_hire_event.95.t
+	desc = gsk_hire_event.95.d
+	picture = gsk_hire_event.91.p
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			gsk_yoyoku_rank_promotion = yes
+		}
+	}
+	option = {
+		name = gsk_hire_event.91.a
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#没吃饱
+	id = gsk_hire_event.96
+	title = gsk_hire_event.96.t
+	desc = gsk_hire_event.96.d
+	picture = gsk_hire_event.96.p
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+	}
+	option = {
+		name = gsk_hire_event.96.a
+		set_country_flag = hakugyokurou_quest0_temp
+		every_unit_leader = {
+			limit = {
+				OR = {
+					has_trait = yuyuko_commander_peculiarity2
+					has_trait = yuyuko_commander_peculiarity0
+					has_trait = yuyuko_commander_peculiarity1
+				}
+			}
+			add_timed_unit_leader_trait = {
+				trait = uuz_supply_grace
+				days = 30
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#辉夜
+	id = gsk_hire_event.101
+	title = gsk_hire_event.101.t
+	desc = gsk_hire_event.101.d
+	picture = gsk_hire_event.101.p
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+	}
+	option = {
+		name = gsk_hire_event.101.a
+		custom_effect_tooltip = gsk_hire_event.101.a.tt
+		set_country_flag = kaguya_is_recruit_flag
+		set_country_flag = mokou_is_recruit_flag
+		set_country_flag = yagokoro_is_recruit_flag
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#探女
+	id = gsk_hire_event.121
+	title = gsk_hire_event.121.t
+	desc = gsk_hire_event.121.d
+	picture = gsk_hire_event.121.p
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			set_country_flag = kanjuden_event_completed
+		}
+	}
+	option = {
+		name = gsk_hire_event.121.a
+		custom_effect_tooltip = gsk_hire_event.121.a.tt
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = -200
+			producer = root
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+			producer = root
+		}
+		set_country_flag = doremy_is_recruit_flag
+		set_country_flag = sagume_is_recruit_flag
+		hidden_effect = {
+			country_event = {
+				days = 50
+				random_days = 10
+				id = gsk_hire_event.122
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = gsk_hire_event.121.b
+		custom_effect_tooltip = gsk_hire_event.121.b.tt
+		set_country_flag = doremy_is_recruit_flag
+		set_country_flag = sagume_is_recruit_flag
+		set_country_flag = reisen_is_assit_flag
+		hidden_effect = {
+			country_event = {
+				days = 30
+				random_days = 10
+				id = gsk_hire_event.123
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#纯狐
+	id = gsk_hire_event.122
+	title = gsk_hire_event.122.t
+	desc = gsk_hire_event.122.d
+	picture = gsk_hire_event.122.p
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+	}
+	option = {
+		name = gsk_hire_event.122.a
+		custom_effect_tooltip = gsk_hire_event.122.a.tt
+		set_country_flag = junko_is_recruit_flag
+		set_country_flag = hecatia_is_recruit_flag
+		set_country_flag = clownpiece_is_recruit_flag
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {#纯狐
+	id = gsk_hire_event.123
+	title = gsk_hire_event.123.t
+	desc = gsk_hire_event.123.d
+	picture = gsk_hire_event.122.p
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = reisen_is_assit_flag
+			set_country_flag = kanjuden_event_completed
+		}
+	}
+	option = {
+		name = gsk_hire_event.123.a
+		custom_effect_tooltip = gsk_hire_event.122.a.tt
+		every_unit_leader = {
+			limit = {
+				has_trait = reisen_commander_peculiarity
+			}
+			add_unit_leader_trait = reisen_commander_peculiarity2
+		}
+		set_country_flag = junko_is_recruit_flag
+		set_country_flag = hecatia_is_recruit_flag
+		set_country_flag = clownpiece_is_recruit_flag
+		ai_chance = {
+			base = 0
+		}
+	}
+}

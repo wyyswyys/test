@@ -1,0 +1,1141 @@
+@expeditions_days_remove = 50
+
+gsk_active_system = {
+	gsk_active_the_system = {#激活
+		priority = 101
+		allowed = {
+		}
+		available = {
+			is_ai = no
+			has_manpower > 100
+			#num_of_civilian_factories_available_for_projects > 1
+		}
+		visible = {
+			is_ai = no
+			has_global_flag = find_gsk
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 15
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			add_manpower = -100
+		}
+		remove_effect = {
+			set_country_flag = show_other_role_recruitment_flag
+			set_country_flag = allow_creat_fumo_flag
+			country_event = {
+				id = gsk_main_event.21
+				days = 1
+			}
+		}
+	}
+	gsk_debug_all = {
+		priority = 500
+		allowed = {
+		}
+		available = {
+			is_ai = no
+		}
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		fire_only_once = no
+		cost = 0
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			set_global_flag = find_gsk
+			set_country_flag = remilia_is_recruit_flag
+			set_country_flag = sakuya_is_recruit_flag
+			set_country_flag = keine_is_recruit_flag
+			set_country_flag = akyuu_is_recruit_flag
+			set_country_flag = reimu_is_recruit_flag
+			set_country_flag = marisa_is_recruit_flag
+			set_country_flag = gsk_alice_is_recruit_flag
+			set_country_flag = gsk_alice_is_recruit_flag1
+			set_country_flag = patchouli_is_recruit_flag
+			set_country_flag = sanae_is_recruit_flag
+			set_country_flag = kanako_is_recruit_flag
+			set_country_flag = suwako_is_recruit_flag
+			set_country_flag = satori_is_recruit_flag
+			set_country_flag = koishi_is_recruit_flag
+			set_country_flag = youmu_is_recruit_flag
+			set_country_flag = yuyuko_is_recruit_flag
+			set_country_flag = tewi_is_recruit_flag
+			set_country_flag = reisen_is_recruit_flag
+			set_country_flag = kaguya_is_recruit_flag
+			set_country_flag = mokou_is_recruit_flag
+			set_country_flag = yagokoro_is_recruit_flag
+			set_country_flag = flandre_is_recruit_flag
+			set_country_flag = cirno_is_recruit_flag
+			set_country_flag = aya_is_recruit_flag
+			set_country_flag = yuka_is_recruit_flag
+			set_country_flag = tenshi_is_recruit_flag
+			set_country_flag = yukari_is_recruit_flag
+			set_country_flag = kokoro_is_recruit_flag
+			set_country_flag = kogasa_is_recruit_flag
+			set_country_flag = shikieiki_is_recruit_flag
+			set_country_flag = kosuzu_is_recruit_flag
+			set_country_flag = hearn_is_recruit_flag
+			set_country_flag = renko_is_recruit_flag
+			set_country_flag = seiran_is_recruit_flag
+			set_country_flag = ringo_is_recruit_flag
+			set_country_flag = doremy_is_recruit_flag
+			set_country_flag = sagume_is_recruit_flag
+			set_country_flag = clownpiece_is_recruit_flag
+			set_country_flag = junko_is_recruit_flag
+			set_country_flag = hecatia_is_recruit_flag
+			set_country_flag = gsk_system_is_enable_flag
+			set_country_flag = allow_creat_fumo_flag
+			set_variable = { gsk_var_number_of_fumo = 100 }
+			set_variable = { gsk_var_leaders_gui_per_page = 2 }
+			set_variable = { gsk_var_leaders_gui_page = 2 }
+			add_ideas = gsk_main_event_idea
+			set_technology = {
+				shikieiki_attack = 1
+				popup = no
+			}
+			set_technology = {
+				shikieiki_defend = 1
+				popup = no
+			}
+			# set_technology = { masterful_blitz = 1 popup = no }
+			create_intelligence_agency = {
+				name = "地灵殿"
+				icon = GFX_intelligence_agency_logo_generic_2
+			}
+			gsk_create_satori_operative = yes
+			gsk_create_koishi_operative = yes
+			set_technology = {
+				gsk_equipment_houraisan_med_tech = 1
+			}
+			add_to_variable = {
+				value = 100
+				var = gsk_var_number_of_contact
+			}
+			add_equipment_to_stockpile = {
+				type = gsk_equipment_houraisan_med0
+				amount = 200
+				producer = root
+			}
+			
+		}
+		remove_effect = {
+		}
+	}
+	gsk_begin_add_contact = {
+		priority = 500
+		allowed = {
+		}
+		available = {
+			has_manpower > 50
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		visible = {
+			is_ai = no
+			has_country_flag = gsk_system_is_enable_flag
+			NOT = {
+				has_country_flag = gsk_begin_add_contact_flag
+				AND = {
+					has_country_flag = remilia_is_recruit_flag
+					has_country_flag = sakuya_is_recruit_flag
+					has_country_flag = keine_is_recruit_flag
+					has_country_flag = akyuu_is_recruit_flag
+					has_country_flag = reimu_is_recruit_flag
+					has_country_flag = marisa_is_recruit_flag
+					#has_country_flag = gsk_alice_is_recruit_flag
+					#has_country_flag = gsk_alice_is_recruit_flag1
+					#has_country_flag = patchouli_is_recruit_flag
+					has_country_flag = sanae_is_recruit_flag
+					has_country_flag = kanako_is_recruit_flag
+					has_country_flag = suwako_is_recruit_flag
+					has_country_flag = satori_is_recruit_flag
+					has_country_flag = koishi_is_recruit_flag
+					has_country_flag = youmu_is_recruit_flag
+					has_country_flag = yuyuko_is_recruit_flag
+					has_country_flag = tewi_is_recruit_flag
+					has_country_flag = reisen_is_recruit_flag
+					#has_country_flag = kaguya_is_recruit_flag
+					#has_country_flag = mokou_is_recruit_flag
+					#has_country_flag = yagokoro_is_recruit_flag
+					#has_country_flag = flandre_is_recruit_flag
+					#has_country_flag = cirno_is_recruit_flag
+					#has_country_flag = aya_is_recruit_flag
+					has_country_flag = yuka_is_recruit_flag
+					has_country_flag = tenshi_is_recruit_flag
+					has_country_flag = yukari_is_recruit_flag
+					has_country_flag = kokoro_is_recruit_flag
+					has_country_flag = kogasa_is_recruit_flag
+					has_country_flag = shikieiki_is_recruit_flag
+					#has_country_flag = kosuzu_is_recruit_flag
+					#has_country_flag = hearn_is_recruit_flag
+					#has_country_flag = renko_is_recruit_flag
+					has_country_flag = seiran_is_recruit_flag
+					has_country_flag = ringo_is_recruit_flag
+					has_country_flag = doremy_is_recruit_flag
+					has_country_flag = sagume_is_recruit_flag
+					# has_country_flag = clownpiece_is_recruit_flag
+					# has_country_flag = junko_is_recruit_flag
+					# has_country_flag = hecatia_is_recruit_flag
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			set_country_flag = gsk_begin_add_contact_flag
+			add_dynamic_modifier = {
+				modifier = gsk_dym_add_contact
+			}
+		}
+		remove_effect = {
+		}
+	}
+	gsk_add_contact_mission = {
+		priority = 500
+		activation = {
+			is_ai = no
+			has_country_flag = gsk_begin_add_contact_flag
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = gsk_begin_add_contact_flag
+			}
+		}
+		#icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 20
+		selectable_mission = no
+		complete_effect = {
+
+		}
+		timeout_effect = {
+			custom_effect_tooltip = gsk_add_contact_mission_tt
+			add_manpower = -50
+			add_to_variable = {
+				value = 1
+				var = gsk_var_number_of_contact
+			}
+			activate_mission = gsk_add_contact_mission
+		}
+	}
+	gsk_end_add_contact = {
+		priority = 499
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			is_ai = no
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = gsk_begin_add_contact_flag
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			remove_dynamic_modifier = {
+				modifier = gsk_dym_add_contact
+			}
+			clr_country_flag = gsk_begin_add_contact_flag
+		}
+		remove_effect = {
+		}
+	}
+	embodiment_of_Scarlet_Devil = { #激活红魔馆事件相关
+		priority = 99
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_3_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 3
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			not = {
+				has_country_flag = remilia_is_recruit_flag
+				has_country_flag = sakuya_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = @expeditions_days_remove
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -3
+				var = gsk_var_number_of_contact
+			}
+		}
+		remove_effect = {
+			country_event = gsk_main_event.30
+		}
+	}
+	embodiment_of_Scarlet_Devil_2 = {
+		priority = 99
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = already_exploring_embodiment_flag
+			not = {
+				has_country_flag = remilia_is_recruit_flag
+				has_country_flag = sakuya_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = gsk_main_event.30.a.tt
+			set_country_flag = remilia_is_recruit_flag
+			set_country_flag = sakuya_is_recruit_flag
+		}
+	}
+	gsk_human_village = { #人里事件相关
+		priority = 300
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_3_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 3
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			not = {
+				has_country_flag = keine_is_recruit_flag
+				has_country_flag = akyuu_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = @expeditions_days_remove
+		modifier = {
+
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -3
+				var = gsk_var_number_of_contact
+			}
+		}
+		remove_effect = {
+			country_event = gsk_main_event.40
+		}
+	}
+	gsk_human_village_2 = {
+		priority = 300
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = already_exploring_human_flag
+			not = {
+				has_country_flag = keine_is_recruit_flag
+				has_country_flag = akyuu_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = gsk_main_event.40.a.tt
+			set_country_flag = keine_is_recruit_flag
+			set_country_flag = akyuu_is_recruit_flag
+		}
+	}
+	gsk_hakurei_shrine = { #博丽神社相关
+		priority = 301
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_3_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 3
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			not = {
+				has_country_flag = reimu_is_recruit_flag
+				has_country_flag = marisa_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = @expeditions_days_remove
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -3
+				var = gsk_var_number_of_contact
+			}
+		}
+		remove_effect = {
+			country_event = gsk_main_event.50
+		}
+	}
+	gsk_hakurei_shrine_2 = {
+		priority = 301
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = already_exploring_hakurei_shrine_flag
+			not = {
+				has_country_flag = marisa_is_recruit_flag
+				has_country_flag = reimu_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = gsk_main_event.51.a.tt
+			set_country_flag = reimu_is_recruit_flag
+			set_country_flag = marisa_is_recruit_flag
+			hidden_effect = {
+				gsk_check_alice_canbe_recruit = yes
+			}
+		}
+	}
+	gsk_moriya_shrine = { #守失神社相关
+		priority = 299
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_3_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 3
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			not = {
+				has_country_flag = sanae_is_recruit_flag
+				has_country_flag = suwako_is_recruit_flag
+				has_country_flag = kanako_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = @expeditions_days_remove
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -3
+				var = gsk_var_number_of_contact
+			}
+		}
+		remove_effect = {
+			country_event = gsk_main_event.70
+		}
+	}
+	gsk_moriya_shrine_2 = {
+		priority = 299
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = already_exploring_moriya_shrine_flag
+			not = {
+				has_country_flag = sanae_is_recruit_flag
+				has_country_flag = suwako_is_recruit_flag
+				has_country_flag = kanako_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = gsk_main_event.70.a.tt
+			set_country_flag = sanae_is_recruit_flag
+			set_country_flag = suwako_is_recruit_flag
+			set_country_flag = kanako_is_recruit_flag
+		}
+	}
+	gsk_chireiden = { #地灵殿相关
+		priority = 98
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_3_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 3
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			not = {
+				has_country_flag = satori_is_recruit_flag
+				has_country_flag = koishi_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = @expeditions_days_remove
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -3
+				var = gsk_var_number_of_contact
+			}
+		}
+		remove_effect = {
+			country_event = gsk_main_event.80
+		}
+	}
+	gsk_chireiden_2 = {
+		priority = 98
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = already_exploring_chireiden_flag
+			not = {
+				has_country_flag = satori_is_recruit_flag
+				has_country_flag = koishi_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = gsk_main_event.80.a.tt
+			set_country_flag = satori_is_recruit_flag
+			set_country_flag = koishi_is_recruit_flag
+		}
+	}
+	gsk_hakugyokurou = { #白玉楼hakugyokurou
+		priority = 97
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_3_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 3
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			not = {
+				has_country_flag = youmu_is_recruit_flag
+				has_country_flag = yuyuko_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = @expeditions_days_remove
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -3
+				var = gsk_var_number_of_contact
+			}
+		}
+		remove_effect = {
+			country_event = gsk_main_event.90
+		}
+	}
+	gsk_hakugyokurou_2 = {
+		priority = 97
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = already_exploring_hakugyokurou_flag
+			not = {
+				has_country_flag = yuyuko_is_recruit_flag
+				has_country_flag = youmu_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = gsk_main_event.90.a.tt
+			set_country_flag = yuyuko_is_recruit_flag
+			set_country_flag = youmu_is_recruit_flag
+		}
+	}
+	gsk_eientei = { #永远亭eientei
+		priority = 96
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_3_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 3
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			not = {
+				has_country_flag = tewi_is_recruit_flag
+				has_country_flag = reisen_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = @expeditions_days_remove
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -3
+				var = gsk_var_number_of_contact
+			}
+		}
+		remove_effect = {
+			country_event = gsk_main_event.100
+		}
+	}
+	gsk_eientei_2 = {
+		priority = 96
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = already_exploring_eientei_flag
+			not = {
+				has_country_flag = tewi_is_recruit_flag
+				has_country_flag = reisen_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = gsk_main_event.100.a.tt
+			set_country_flag = tewi_is_recruit_flag
+			set_country_flag = reisen_is_recruit_flag
+		}
+	}
+	gsk_hearnandrenko_2 = {
+		priority = 96
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = already_exploring_hearnandrenko_flag
+			not = {
+				has_country_flag = hearn_is_recruit_flag
+				has_country_flag = renko_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = gsk_main_event.110.a.tt
+			set_country_flag = hearn_is_recruit_flag
+			set_country_flag = renko_is_recruit_flag
+		}
+	}
+	gsk_kanjuden = { #绀珠传
+		priority = 95
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_3_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 3
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			not = {
+				has_country_flag = seiran_is_recruit_flag
+				has_country_flag = ringo_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = @expeditions_days_remove
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -3
+				var = gsk_var_number_of_contact
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = gsk_main_event.120.a.tt
+			set_country_flag = seiran_is_recruit_flag
+			set_country_flag = ringo_is_recruit_flag
+		}
+	}
+	gsk_kanjuden_2 = { #绀珠传
+		priority = 94
+		allowed = {
+		}
+		available = {
+			AND = {
+				has_country_flag = reisen_is_recruit_flag
+				has_equipment = {
+					infantry_equipment > 999
+				}
+				has_equipment = {
+					artillery_equipment > 199
+				}
+			}
+			has_country_flag = seiran_is_recruit_flag
+			has_country_flag = ringo_is_recruit_flag
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			not = {
+				has_country_flag = doremy_is_recruit_flag
+				has_country_flag = sagume_is_recruit_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = gsk_hire_event.121
+		}
+		remove_effect = {
+		}
+	}
+	# gsk_kanjuden_3 = { #纯狐
+	# 	priority = 94
+	# 	allowed = {
+	# 	}
+	# 	available = {
+	# 		has_country_flag = reisen_is_recruit_flag
+	# 	}
+	# 	visible = {
+	# 		has_country_flag = gsk_system_is_enable_flag
+	# 		has_country_flag = gsk_kanjuden_3_already_flag
+	# 		not = {
+	# 			has_country_flag = clownpiece_is_recruit_flag
+	# 			has_country_flag = junko_is_recruit_flag
+	# 			has_country_flag = hecatia_is_recruit_flag
+	# 		}
+	# 	}
+	# 	fire_only_once = yes
+	# 	cost = 0
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	complete_effect = {
+	# 		add_to_variable = {
+	# 			value = -3
+	# 			var = gsk_var_number_of_contact
+	# 		}
+	# 	}
+	# 	remove_effect = {
+	# 		custom_effect_tooltip = gsk_main_event.121.a.tt
+	# 		set_country_flag = doremy_is_recruit_flag
+	# 		set_country_flag = sagume_is_recruit_flag
+	# 		set_country_flag = clownpiece_is_recruit_flag
+	# 	}
+	# }
+	gsk_other_role_recruitment0 = {
+		priority = 60
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			not = {
+				has_country_flag = show_other_role_recruitment_flag
+			}
+			OR = {
+				not = {
+					has_country_flag = tenshi_is_recruit_flag
+				}
+				not = {
+					has_country_flag = yukari_is_recruit_flag
+				}
+				not = {
+					has_country_flag = kokoro_is_recruit_flag
+				}
+				not = {
+					has_country_flag = kogasa_is_recruit_flag
+				}
+				not = {
+					has_country_flag = yuka_is_recruit_flag
+				}
+				not = {
+					has_country_flag = shikieiki_is_recruit_flag
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_country_flag = show_other_role_recruitment_flag
+		}
+	}
+	gsk_other_role_recruitment1 = {
+		priority = 60
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = show_other_role_recruitment_flag
+			NOT = {
+				AND = {
+					has_country_flag = tenshi_is_recruit_flag
+					has_country_flag = yukari_is_recruit_flag
+					has_country_flag = kokoro_is_recruit_flag
+					has_country_flag = kogasa_is_recruit_flag
+					has_country_flag = yuka_is_recruit_flag
+					has_country_flag = shikieiki_is_recruit_flag
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			clr_country_flag = show_other_role_recruitment_flag
+		}
+	}
+	gsk_other_role_recruitment00 = {
+		priority = 59
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_1_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 1
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = show_other_role_recruitment_flag
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -1
+				var = gsk_var_number_of_contact
+			}
+			set_country_flag = kogasa_is_recruit_flag
+		}
+	}
+	gsk_other_role_recruitment01 = {
+		priority = 58
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_1_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 1
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = show_other_role_recruitment_flag
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -1
+				var = gsk_var_number_of_contact
+			}
+			set_country_flag = kokoro_is_recruit_flag
+		}
+	}
+	gsk_other_role_recruitment02 = {
+		priority = 57
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_1_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 1
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = show_other_role_recruitment_flag
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -1
+				var = gsk_var_number_of_contact
+			}
+			set_country_flag = yukari_is_recruit_flag
+		}
+	}
+	gsk_other_role_recruitment03 = {
+		priority = 56
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_1_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 1
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = show_other_role_recruitment_flag
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -1
+				var = gsk_var_number_of_contact
+			}
+			set_country_flag = tenshi_is_recruit_flag
+		}
+	}
+	gsk_other_role_recruitment04 = {
+		priority = 55
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_1_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 1
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = show_other_role_recruitment_flag
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -1
+				var = gsk_var_number_of_contact
+			}
+			set_country_flag = yuka_is_recruit_flag
+		}
+	}
+	gsk_other_role_recruitment05 = {
+		priority = 54
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = gsk_number_of_expeditions_1_tt
+				check_variable = {
+					compare = greater_than_or_equals
+					value = 1
+					var = gsk_var_number_of_contact
+				}
+			}
+		}
+		visible = {
+			has_country_flag = gsk_system_is_enable_flag
+			has_country_flag = show_other_role_recruitment_flag
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_to_variable = {
+				value = -1
+				var = gsk_var_number_of_contact
+			}
+			set_country_flag = shikieiki_is_recruit_flag
+		}
+	}
+	# gsk_other_role_recruitment06 = {
+	# 	priority = 54
+	# 	allowed = {
+	# 	}
+	# 	available = {
+	# 	}
+	# 	visible = {
+	# 		is_debug = yes
+	# 		has_country_flag = gsk_system_is_enable_flag
+	# 		has_country_flag = show_other_role_recruitment_flag
+	# 	}
+	# 	fire_only_once = yes
+	# 	cost = 50
+	# 	days_remove = 0
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	complete_effect = {
+	# 		set_country_flag = kosuzu_is_recruit_flag
+	# 	}
+	# }
+}

@@ -1,0 +1,36 @@
+gsk_active_system = {
+	allowed = {
+	}
+	visible = {
+		is_ai = no
+	}
+	icon = gsk_decision_icon
+	
+	priority = 298
+}
+
+gsk_recruit_character_interaction = {
+	allowed = {
+	}
+	visible = {
+		is_ai = no
+		has_country_flag = gsk_system_is_enable_flag
+	}
+	priority = 300
+	icon = gsk_decision_icon
+	scripted_gui = gsk_decision_scripted_gui
+	visible_when_empty = yes
+}
+
+gsk_human_village_quest1_decisions = {
+	allowed = {
+	}
+	visible = {
+		is_ai = no
+		has_country_flag = human_village_quest1_begin_flag
+		not = { has_country_flag = human_village_quest1_win_flag }
+	}
+	priority = 299
+	icon = gsk_decision_icon
+	visible_when_empty = yes
+}

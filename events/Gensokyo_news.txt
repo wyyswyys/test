@@ -1,0 +1,581 @@
+add_namespace = gsk_news_event
+
+news_event = {
+	id = gsk_news_event.2
+	title = gsk_news_event.2.t
+	desc = gsk_news_event.2.d
+	picture = gsk_main_event.2.p
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = gsk_news_event.2.a
+		set_global_flag = find_gsk
+		# unlock_decision_tooltip = gsk_active_the_system
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+news_event = {
+	id = gsk_news_event.30
+	title = gsk_news_event.30.t
+	desc = gsk_news_event.30.d
+	picture = gsk_news_event.30.p
+	major = no
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = gsk_news_event.30.a
+		set_country_flag = kosuzu_is_recruit_flag
+		custom_effect_tooltip = gsk_news_event.30.a.tt
+		add_timed_idea = {
+			idea = gsk_human_village_quest1_idea
+			days = 363
+		}
+		hidden_effect = {
+			set_variable = {
+				gsk_var_kosuzu_win_times = 0
+			}
+			news_event = {
+				id = gsk_news_event.31
+				days = 90
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+
+news_event = {#一面
+	id = gsk_news_event.31
+	title = gsk_news_event.31.t
+	desc = gsk_news_event.31.d
+	picture = gsk_news_event.30.p
+	major = no
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = gsk_news_event.30.a
+		custom_effect_tooltip = gsk_news_event.31.a.tt
+		hidden_effect = {
+			news_event = {
+				id = gsk_news_event.32
+				days = 90
+			}
+			if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 2
+					}
+				}
+				country_event = gsk_hire_event.410
+				set_country_flag = gsk_human_village_quest1_win_cirno
+			}
+			else_if = {
+				limit = { 
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 1
+					}
+				}
+				random_list = {
+					60 = {
+						country_event = gsk_hire_event.410
+						set_country_flag = gsk_human_village_quest1_win_cirno
+					}
+					30 = {
+						country_event = gsk_hire_event.411
+					}
+					10 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 0
+					}
+				}
+				random_list = {
+					10 = {
+						country_event = gsk_hire_event.410
+						set_country_flag = gsk_human_village_quest1_win_cirno
+					}
+					10 = {
+						country_event = gsk_hire_event.411
+					}
+					10 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+
+news_event = {#二面
+	id = gsk_news_event.32
+	title = gsk_news_event.32.t
+	desc = gsk_news_event.32.d
+	picture = gsk_news_event.30.p
+	major = no
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = gsk_news_event.30.a
+		custom_effect_tooltip = gsk_news_event.32.a.tt
+		hidden_effect = {
+			news_event = {
+				id = gsk_news_event.33
+				days = 90
+			}
+			if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 4
+					}
+				}
+				set_country_flag = gsk_human_village_quest1_win_keine
+				country_event = gsk_hire_event.410
+			}
+			else_if = {
+				limit = { 
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 3
+					}
+				}
+				random_list = {
+					60 = {
+						country_event = gsk_hire_event.410
+						set_country_flag = gsk_human_village_quest1_win_keine
+					}
+					30 = {
+						country_event = gsk_hire_event.411
+					}
+					10 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 2
+					}
+				}
+				random_list = {
+					10 = {
+						country_event = gsk_hire_event.410
+						set_country_flag = gsk_human_village_quest1_win_keine
+					}
+					10 = {
+						country_event = gsk_hire_event.411
+					}
+					10 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 1
+					}
+				}
+				random_list = {
+					10 = {
+						country_event = gsk_hire_event.410
+					}
+					30 = {
+						country_event = gsk_hire_event.411
+					}
+					60 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 0
+					}
+				}
+				country_event = gsk_hire_event.412
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+news_event = {#三面
+	id = gsk_news_event.33
+	title = gsk_news_event.33.t
+	desc = gsk_news_event.33.d
+	picture = gsk_news_event.30.p
+	major = no
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = gsk_news_event.30.a
+		custom_effect_tooltip = gsk_news_event.33.a.tt
+		hidden_effect = {
+			news_event = {
+				id = gsk_news_event.34
+				days = 90
+			}
+			if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 5
+					}
+				}
+				country_event = gsk_hire_event.410
+			}
+			else_if = {
+				limit = { 
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 4
+					}
+				}
+				random_list = {
+					60 = {
+						country_event = gsk_hire_event.410
+					}
+					30 = {
+						country_event = gsk_hire_event.411
+					}
+					10 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 3
+					}
+				}
+				random_list = {
+					10 = {
+						country_event = gsk_hire_event.410
+					}
+					10 = {
+						country_event = gsk_hire_event.411
+					}
+					10 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 2
+					}
+				}
+				random_list = {
+					10 = {
+						country_event = gsk_hire_event.410
+					}
+					30 = {
+						country_event = gsk_hire_event.411
+					}
+					60 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+					}
+				}
+				country_event = gsk_hire_event.412
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+news_event = {#四面
+	id = gsk_news_event.34
+	title = gsk_news_event.34.t
+	desc = gsk_news_event.34.d
+	picture = gsk_news_event.30.p
+	major = no
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = gsk_news_event.30.a
+		custom_effect_tooltip = gsk_news_event.34.a.tt
+		hidden_effect = {
+			news_event = {
+				id = gsk_news_event.35
+				days = 3
+			}
+			if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 6
+					}
+				}
+				country_event = gsk_hire_event.410
+			}
+			else_if = {
+				limit = { 
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 5
+					}
+				}
+				random_list = {
+					60 = {
+						country_event = gsk_hire_event.410
+					}
+					30 = {
+						country_event = gsk_hire_event.411
+					}
+					10 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 4
+					}
+				}
+				random_list = {
+					10 = {
+						country_event = gsk_hire_event.410
+					}
+					10 = {
+						country_event = gsk_hire_event.411
+					}
+					10 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+						skill > 3
+					}
+				}
+				random_list = {
+					10 = {
+						country_event = gsk_hire_event.410
+					}
+					30 = {
+						country_event = gsk_hire_event.411
+					}
+					60 = {
+						country_event = gsk_hire_event.412
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = kosuzu_commander_peculiarity
+					}
+				}
+				country_event = gsk_hire_event.412
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+news_event = {#最终
+	id = gsk_news_event.35
+	title = gsk_news_event.35.t
+	desc = gsk_news_event.35.d
+	picture = gsk_news_event.30.p
+	major = no
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			set_country_flag = human_village_quest1_win_flag
+			clr_country_flag = gsk_human_village_quest1_win_cirno
+			clr_country_flag = gsk_human_village_quest1_win_keine
+			clr_country_flag = human_village_quest1_begin_flag
+		}
+	}
+	option = {
+		name = gsk_news_event.35.a
+		custom_effect_tooltip = gsk_news_event.35.a.tt
+		trigger = {
+			check_variable = {
+				compare = equals
+				value = -4
+				var = gsk_var_kosuzu_win_times
+			}
+		}
+		every_army_leader = {
+			limit = {
+				has_trait = akyuu_commander_peculiarity
+			}
+			remove_unit_leader_trait = akyuu_commander_peculiarity
+			add_unit_leader_trait = akyuu_commander_peculiarity0
+		}
+		hidden_effect = {
+			clear_variable = gsk_var_kosuzu_win_times
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = gsk_news_event.35.a
+		custom_effect_tooltip = gsk_news_event.35.a.tt
+		trigger = {
+			OR = {
+				check_variable = {
+					compare = equals
+					value = -3
+					var = gsk_var_kosuzu_win_times
+				}
+				check_variable = {
+					compare = equals
+					value = -2
+					var = gsk_var_kosuzu_win_times
+				}
+			}
+		}
+		every_army_leader = {
+			limit = {
+				has_trait = akyuu_commander_peculiarity
+			}
+			remove_unit_leader_trait = akyuu_commander_peculiarity
+			add_unit_leader_trait = akyuu_commander_peculiarity0
+		}
+		hidden_effect = {
+			clear_variable = gsk_var_kosuzu_win_times
+		}
+		add_ideas = gsk_human_village_quest1_idea0
+	}
+	option = {
+		name = gsk_news_event.35.a
+		custom_effect_tooltip = gsk_news_event.35.a.tt
+		trigger = {
+			OR = {
+				check_variable = {
+					compare = equals
+					value = 0
+					var = gsk_var_kosuzu_win_times
+				}
+				check_variable = {
+					compare = equals
+					value = -1
+					var = gsk_var_kosuzu_win_times
+				}
+			}
+		}
+		every_army_leader = {
+			limit = {
+				has_trait = akyuu_commander_peculiarity
+			}
+			remove_unit_leader_trait = akyuu_commander_peculiarity
+			add_unit_leader_trait = akyuu_commander_peculiarity0
+		}
+		hidden_effect = {
+			clear_variable = gsk_var_kosuzu_win_times
+		}
+		add_ideas = gsk_human_village_quest1_idea1
+	}
+	option = {
+		name = gsk_news_event.35.a
+		custom_effect_tooltip = gsk_news_event.35.a.tt
+		trigger = {
+			OR = {
+				check_variable = {
+					compare = equals
+					value = 1
+					var = gsk_var_kosuzu_win_times
+				}
+				check_variable = {
+					compare = equals
+					value = 2
+					var = gsk_var_kosuzu_win_times
+				}
+			}
+		}
+		every_army_leader = {
+			limit = {
+				has_trait = akyuu_commander_peculiarity
+			}
+			remove_unit_leader_trait = akyuu_commander_peculiarity
+			add_unit_leader_trait = akyuu_commander_peculiarity0
+		}
+		hidden_effect = {
+			clear_variable = gsk_var_kosuzu_win_times
+		}
+		add_ideas = gsk_human_village_quest1_idea2
+	}
+	option = {
+		name = gsk_news_event.35.a
+		custom_effect_tooltip = gsk_news_event.35.a.tt
+		trigger = {
+			OR = {
+				check_variable = {
+					compare = equals
+					value = 4
+					var = gsk_var_kosuzu_win_times
+				}
+				check_variable = {
+					compare = equals
+					value = 3
+					var = gsk_var_kosuzu_win_times
+				}
+			}
+		}
+		every_army_leader = {
+			limit = {
+				has_trait = akyuu_commander_peculiarity
+			}
+			remove_unit_leader_trait = akyuu_commander_peculiarity
+			add_unit_leader_trait = akyuu_commander_peculiarity0
+		}
+		hidden_effect = {
+			clear_variable = gsk_var_kosuzu_win_times
+		}
+		add_ideas = gsk_human_village_quest1_idea3
+	}
+}

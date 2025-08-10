@@ -1,0 +1,61 @@
+equipments = {
+	gsk_equipment_frog = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_infantry_equipment
+		is_buildable = no
+		type = {
+			infantry
+			motorized
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 0
+
+		build_cost_ic = 4.0
+		resources = {
+			#chromium = 1
+		}
+	}
+	gsk_equipment_frog0 = {
+		year = 1918
+
+		archetype = gsk_equipment_frog
+		priority = 0
+	}
+
+	gsk_equipment_houraisan_med = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_infantry_equipment
+		is_buildable = no
+		type = {
+			infantry
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 1
+
+		lend_lease_cost = 0
+
+		build_cost_ic = 600.0
+		resources = {
+
+		}
+	}
+	gsk_equipment_houraisan_med0 = {
+		year = 1918
+
+		archetype = gsk_equipment_houraisan_med
+		priority = 0
+	}
+}

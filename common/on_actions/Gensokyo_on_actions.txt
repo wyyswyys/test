@@ -1,0 +1,53 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = { id = gsk_main_event.1 }
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			ROOT = {
+				if = {
+					limit = {
+						has_idea = gsk_embodiment_idea2
+					}
+					every_subject_country = {
+						if = {
+							limit = { NOT = {
+								has_idea = gsk_embodiment_idea_sub2
+							} }
+							add_ideas = gsk_embodiment_idea_sub2
+						}
+					}
+				}
+				else_if = {
+					limit = { has_idea = gsk_embodiment_idea1 }
+					every_subject_country = {
+						if = {
+							limit = { NOT = {
+								has_idea = gsk_embodiment_idea_sub1
+							} }
+							add_ideas = gsk_embodiment_idea_sub1
+						}
+					}
+				}
+				else_if = {
+					limit = { has_idea = gsk_embodiment_idea0 }
+					every_subject_country = {
+						if = {
+							limit = { NOT = {
+								has_idea = gsk_embodiment_idea_sub0
+							} }
+							add_ideas = gsk_embodiment_idea_sub0
+						}
+					}
+				}
+			}
+		}
+	}
+}

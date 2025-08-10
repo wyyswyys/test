@@ -1,0 +1,858 @@
+defined_text = {
+	name = choose_leader_index
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 0 }
+			check_variable = { gsk_var_leaders_choose_per_index = 0 }
+		}
+		localization_key = choose_leader_none
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 2 }
+			check_variable = { gsk_var_leaders_choose_per_index = 2 }
+		}
+		localization_key = choose_leader_remilia
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 2 }
+			check_variable = { gsk_var_leaders_choose_per_index = 3 }
+		}
+		localization_key = choose_leader_flandre
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 2 }
+			check_variable = { gsk_var_leaders_choose_per_index = 5 }
+		}
+		localization_key = choose_leader_sakuya
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 2 }
+			check_variable = { gsk_var_leaders_choose_per_index = 7 }
+		}
+		localization_key = choose_leader_cirno
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 2 }
+			check_variable = { gsk_var_leaders_choose_per_index = 11 }
+		}
+		localization_key = choose_leader_patchouli
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 3 }
+			check_variable = { gsk_var_leaders_choose_per_index = 2 }
+		}
+		localization_key = choose_leader_keine
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 3 }
+			check_variable = { gsk_var_leaders_choose_per_index = 3 }
+		}
+		localization_key = choose_leader_akyuu
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 3 }
+			check_variable = { gsk_var_leaders_choose_per_index = 5 }
+		}
+		localization_key = choose_leader_kosuzu
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 5 }
+			check_variable = { gsk_var_leaders_choose_per_index = 2 }
+		}
+		localization_key = choose_leader_reimu
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 5 }
+			check_variable = { gsk_var_leaders_choose_per_index = 3 }
+		}
+		localization_key = choose_leader_marisa
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 7 }
+			check_variable = { gsk_var_leaders_choose_per_index = 2 }
+		}
+		localization_key = choose_leader_sanae
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 7 }
+			check_variable = { gsk_var_leaders_choose_per_index = 3 }
+		}
+		localization_key = choose_leader_kanako
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 7 }
+			check_variable = { gsk_var_leaders_choose_per_index = 5 }
+		}
+		localization_key = choose_leader_suwako
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 7 }
+			check_variable = { gsk_var_leaders_choose_per_index = 7 }
+		}
+		localization_key = choose_leader_aya
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 11 }
+			check_variable = { gsk_var_leaders_choose_per_index = 2 }
+		}
+		localization_key = choose_leader_satori
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 11 }
+			check_variable = { gsk_var_leaders_choose_per_index = 3 }
+		}
+		localization_key = choose_leader_koishi
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 11 }
+			check_variable = { gsk_var_leaders_choose_per_index = 5 }
+		}
+		localization_key = choose_leader_kokoro
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 13 }
+			check_variable = { gsk_var_leaders_choose_per_index = 2 }
+		}
+		localization_key = choose_leader_youmu
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 13 }
+			check_variable = { gsk_var_leaders_choose_per_index = 3 }
+		}
+		localization_key = choose_leader_yuyuko
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 13 }
+			check_variable = { gsk_var_leaders_choose_per_index = 5 }
+		}
+		localization_key = choose_leader_yukari
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 17 }
+			check_variable = { gsk_var_leaders_choose_per_index = 2 }
+		}
+		localization_key = choose_leader_tewi
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 17 }
+			check_variable = { gsk_var_leaders_choose_per_index = 3 }
+		}
+		localization_key = choose_leader_reisen
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 17 }
+			check_variable = { gsk_var_leaders_choose_per_index = 5 }
+		}
+		localization_key = choose_leader_kaguya
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 17 }
+			check_variable = { gsk_var_leaders_choose_per_index = 7 }
+		}
+		localization_key = choose_leader_mokou
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 17 }
+			check_variable = { gsk_var_leaders_choose_per_index = 11 }
+		}
+		localization_key = choose_leader_yagokoro
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 19 }
+			check_variable = { gsk_var_leaders_choose_per_index = 2 }
+		}
+		localization_key = choose_leader_yuka
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 19 }
+			check_variable = { gsk_var_leaders_choose_per_index = 3 }
+		}
+		localization_key = choose_leader_tenshi
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 19 }
+			check_variable = { gsk_var_leaders_choose_per_index = 5 }
+		}
+		localization_key = choose_leader_kogasa
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 19 }
+			check_variable = { gsk_var_leaders_choose_per_index = 7 }
+		}
+		localization_key = choose_leader_shikieiki
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 19 }
+			check_variable = { gsk_var_leaders_choose_per_index = 11 }
+		}
+		localization_key = choose_leader_gsk_alice
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 23 }
+			check_variable = { gsk_var_leaders_choose_per_index = 2 }
+		}
+		localization_key = choose_leader_renko
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 23 }
+			check_variable = { gsk_var_leaders_choose_per_index = 3 }
+		}
+		localization_key = choose_leader_hearn
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 29 }
+			check_variable = { gsk_var_leaders_choose_per_index = 2 }
+		}
+		localization_key = choose_leader_seiran
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 29 }
+			check_variable = { gsk_var_leaders_choose_per_index = 3 }
+		}
+		localization_key = choose_leader_ringo
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 29 }
+			check_variable = { gsk_var_leaders_choose_per_index = 5 }
+		}
+		localization_key = choose_leader_doremy
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 29 }
+			check_variable = { gsk_var_leaders_choose_per_index = 7 }
+		}
+		localization_key = choose_leader_sagume
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 29 }
+			check_variable = { gsk_var_leaders_choose_per_index = 11 }
+		}
+		localization_key = choose_leader_clownpiece
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 29 }
+			check_variable = { gsk_var_leaders_choose_per_index = 13 }
+		}
+		localization_key = choose_leader_junko
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_gui_page = 29 }
+			check_variable = { gsk_var_leaders_choose_per_index = 17 }
+		}
+		localization_key = choose_leader_hecatia
+	}
+}
+
+defined_text = {
+	name = gsk_leader_name_tt
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 2 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = remilia_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 2 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = flandre_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 2 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = sakuya_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 2 }
+			check_variable = { gsk_var_leaders_choose_index = 7 }
+		}
+		localization_key = cirno_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 2 }
+			check_variable = { gsk_var_leaders_choose_index = 11 }
+		}
+		localization_key = patchouli_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 3 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = keine_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 3 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = akyuu_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 3 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = kosuzu_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 5 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = reimu_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 5 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = marisa_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 7 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = sanae_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 7 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = kanako_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 7 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = suwako_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 7 }
+			check_variable = { gsk_var_leaders_choose_index = 7 }
+		}
+		localization_key = aya_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 11 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = satori_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 11 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = koishi_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 11 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = kokoro_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 13 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = youmu_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 13 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = yuyuko_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 13 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = yukari_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 17 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = tewi_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 17 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = reisen_name_s
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 17 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = kaguya_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 17 }
+			check_variable = { gsk_var_leaders_choose_index = 7 }
+		}
+		localization_key = mokou_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 17 }
+			check_variable = { gsk_var_leaders_choose_index = 11 }
+		}
+		localization_key = yagokoro_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 19 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = yuka_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 19 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = tenshi_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 19 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = kogasa_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 19 }
+			check_variable = { gsk_var_leaders_choose_index = 7 }
+		}
+		localization_key = shikieiki_name_s
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 19 }
+			check_variable = { gsk_var_leaders_choose_index = 11 }
+		}
+		localization_key = gsk_alice_name_s
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 23 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = renko_name_s
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 23 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = hearn_name_s
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = seiran_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = ringo_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = doremy_name_s
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 7 }
+		}
+		localization_key = sagume_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 11 }
+		}
+		localization_key = clownpiece_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 13 }
+		}
+		localization_key = junko_name
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 17 }
+		}
+		localization_key = hecatia_name_s
+	}
+}
+
+defined_text = {
+	name = GFX_gsk_leader_portrait
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 2 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = "GFX_portrait_remilia"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 2 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = "GFX_portrait_flandre"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 2 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = "GFX_portrait_sakuya"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 2 }
+			check_variable = { gsk_var_leaders_choose_index = 7 }
+		}
+		localization_key = "GFX_portrait_cirno"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 2 }
+			check_variable = { gsk_var_leaders_choose_index = 11 }
+		}
+		localization_key = "GFX_portrait_patchouli"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 3 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = "GFX_portrait_keine"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 3 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = "GFX_portrait_akyuu"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 3 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = "GFX_portrait_kosuzu"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 5 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = "GFX_portrait_reimu"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 5 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = "GFX_portrait_marisa"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 7 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = "GFX_portrait_sanae"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 7 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = "GFX_portrait_kanako"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 7 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = "GFX_portrait_suwako"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 7 }
+			check_variable = { gsk_var_leaders_choose_index = 7 }
+		}
+		localization_key = "GFX_portrait_aya"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 11 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = "GFX_portrait_satori_intel"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 11 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = "GFX_portrait_koishi_intel"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 11 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = "GFX_portrait_kokoro"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 13 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = "GFX_portrait_youmu"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 13 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = "GFX_portrait_yuyuko"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 13 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = "GFX_portrait_yukari"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 17 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = "GFX_portrait_tewi"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 17 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = "GFX_portrait_reisen"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 17 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = "GFX_portrait_kaguya"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 17 }
+			check_variable = { gsk_var_leaders_choose_index = 7 }
+		}
+		localization_key = "GFX_portrait_mokou"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 17 }
+			check_variable = { gsk_var_leaders_choose_index = 11 }
+		}
+		localization_key = "GFX_portrait_yagokoro"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 19 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = "GFX_portrait_yuka"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 19 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = "GFX_portrait_tenshi"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 19 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = "GFX_portrait_kogasa"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 19 }
+			check_variable = { gsk_var_leaders_choose_index = 7 }
+		}
+		localization_key = "GFX_portrait_shikieiki"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 19 }
+			check_variable = { gsk_var_leaders_choose_index = 11 }
+		}
+		localization_key = "GFX_portrait_gsk_alice"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 23 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = "GFX_portrait_renko"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 23 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = "GFX_portrait_hearn"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 2 }
+		}
+		localization_key = "GFX_portrait_seiran"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 3 }
+		}
+		localization_key = "GFX_portrait_ringo"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 5 }
+		}
+		localization_key = "GFX_portrait_doremy"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 7 }
+		}
+		localization_key = "GFX_portrait_sagume"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 11 }
+		}
+		localization_key = "GFX_portrait_clownpiece"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 13 }
+		}
+		localization_key = "GFX_portrait_junko"
+	}
+	text = {
+		trigger = {
+			check_variable = { gsk_var_leaders_choose_team = 29 }
+			check_variable = { gsk_var_leaders_choose_index = 17 }
+		}
+		localization_key = "GFX_portrait_hecatia"
+	}
+}

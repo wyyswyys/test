@@ -1,0 +1,43 @@
+guiTypes = {
+
+containerWindowType = {
+		name = "gsk_leaders_ui"
+		position = { x = 0 y = 0 }
+		size = { width = 200 height = 300 }
+		orientation = upper_left
+		clipping = yes
+
+		iconType = {
+			name = "gsk_leader_portrait"
+			spriteType = "GFX_leader_unknown"
+			position = { x = 13 y = 55 }
+			alwaystransparent = no
+			scale = 0.99
+			pdx_tooltip = gsk_leader_idea_tt
+		}
+		iconType = {
+			name = "gsk_leader_frame"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = 6 y = 49 }
+			alwaystransparent = no
+			pdx_tooltip = gsk_leader_idea_tt
+		}
+		instantTextBoxType = {
+			name = "gsk_leader_name"
+			position = { x = 19 y = 277 }
+			font = "hoi_18mbs"
+			text = "[gsk_leader_name_tt]"
+			format = center
+			maxWidth = 150
+		}
+		buttonType = {
+			name = "gsk_change_leader_button"
+			position = { x = 140 y = 6 }
+			spriteType = "GFX_change_leader_button"
+			orientation = upper_left
+			clicksound = click_default
+			pdx_tooltip = gsk_change_leader_button_tt
+			scale = 0.8
+		}
+	}
+}

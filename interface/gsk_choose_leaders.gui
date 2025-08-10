@@ -1,0 +1,1272 @@
+@row_scale_1 = 100
+@row_scale_2 = 200
+@row_scale_3 = 300
+@row_scale_4 = 400
+@row_scale_5 = 500
+@row_scale_6 = 600
+@row_scale_7 = 700
+@row_scale_8 = 800
+@row_scale_05 = 50
+@row_scale_15 = 150
+@row_scale_25 = 250
+@row_scale_35 = 350
+@row_scale_45 = 450
+@row_scale_55 = 550
+@row_scale_65 = 650
+@row_scale_75 = 750
+@row_scale_85 = 850
+@col_scale_1 = 100
+@col_scale_2 = 200
+@col_scale_3 = 300
+@col_scale_4 = 400
+@col_scale_5 = 500
+@col_scale_6 = 600
+@col_scale_7 = 700
+@col_scale_15 = 150
+@col_scale_25 = 250
+@col_scale_35 = 350
+@col_scale_45 = 450
+@col_scale_55 = 550
+@col_scale_65 = 650
+@col_scale_75 = 750
+@pre_choose_row_0 = 110
+@pre_choose_row_1 = 260
+@pre_choose_row_2 = 410
+@pre_choose_row_3 = 560
+@pre_choose_row_4 = 710
+@pre_choose_col_0 = 100
+@pre_choose_col_1 = 135
+
+guiTypes = {
+	containerWindowType = {
+		name = "gsk_choose_leaders_box"
+		position = { x= -300 y= -400 }
+		size = { width = 1000 height= 800 }
+		moveable = yes
+		Orientation = CENTER
+		# show_position = { x= -300 y= -400 }
+		# hide_position = { x = -2500 y = -400 }
+		show_sound = event_popup
+		hide_sound = menu_close_window
+		# animation_type = decelerated
+		# animation_time = 700
+		animation_type = decelerated
+		fade_time = 500
+		background = {
+			name = "background_down"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+		iconType = {
+			name = "background_scarlet_devil"
+			spriteType = "GFX_background_scarlet_devil"
+			#position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "background_human_village"
+			spriteType = "GFX_background_human_village"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "background_hakurei"
+			spriteType = "GFX_background_hakurei"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "background_moriya"
+			spriteType = "GFX_background_moriya"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "background_chireiden"
+			spriteType = "GFX_background_chireiden"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "background_hakugyokurou"
+			spriteType = "GFX_background_hakugyokurou"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "background_eientei"
+			spriteType = "GFX_background_eientei"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "background_hearnandrenko"
+			spriteType = "GFX_background_other"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "background_kanjuden"
+			spriteType = "GFX_background_kanjuden"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "background_other"
+			spriteType = "GFX_background_other"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "Title"
+			position = { x = 400 y = 15 }
+			orientation = UPPER_LEFT
+			font = "hoi_36header"
+			text = "gsk_choose_leaders_box_title"
+			format = center
+		}
+		instantTextboxType = {
+			name = "Title_desc"
+			position = { x = 100 y = 50 }
+			orientation = UPPER_LEFT
+			font = "hoi_24header"
+			text = "gsk_choose_leaders_box_title_desc"
+			format = center
+			maxWidth = 800
+		}
+		# instantTextboxType = {
+		# 	name = "Title_desc"
+		# 	position = { x = 125 y = 350 }
+		# 	orientation = UPPER_LEFT
+		# 	font = "hoi_24header"
+		# 	text = "gsk_choose_leaders_box_title_desc"
+		# 	format = center
+		# 	maxWidth = 200
+		# }
+		# buttonType = {
+		# 	name = "pre_button"
+		# 	position = { x = 60 y = 125 }
+		# 	scale = 0.5
+		# 	quadTextureSprite = "GFX_gsk_leaders_pre_button"
+		# 	pdx_tooltip = pre_button_tt
+		# }
+		buttonType = {
+			name = "choose_scarlet_devil"
+			position = { x = @pre_choose_row_0 y = @pre_choose_col_0 }
+			quadTextureSprite = "GFX_btn_dropdown"
+			scale = 0.6
+			pdx_tooltip = choose_scarlet_devil_button_tt
+		}
+		instantTextboxType = {
+			name = "choose_scarlet_devil_tt"
+			position = { x = @pre_choose_row_0 y = 103 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = choose_scarlet_devil_button_tt
+			format = center
+			maxWidth = 146
+		}
+		buttonType = {
+			name = "choose_human_village"
+			position = { x = @pre_choose_row_1 y = @pre_choose_col_0 }
+			quadTextureSprite = "GFX_btn_dropdown"
+			scale = 0.6
+			pdx_tooltip = choose_human_village_button_tt
+		}
+		instantTextboxType = {
+			name = "choose_human_village_tt"
+			position = { x = @pre_choose_row_1 y = 103 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = choose_human_village_button_tt
+			format = center
+			maxWidth = 146
+		}
+		buttonType = {
+			name = "choose_hakurei_shrine"
+			position = { x = @pre_choose_row_2 y = @pre_choose_col_0 }
+			quadTextureSprite = "GFX_btn_dropdown"
+			scale = 0.6
+			pdx_tooltip = choose_hakurei_shrine_button_tt
+		}
+		instantTextboxType = {
+			name = "choose_hakurei_shrine_tt"
+			position = { x = @pre_choose_row_2 y = 103 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = choose_hakurei_shrine_button_tt
+			format = center
+			maxWidth = 146
+		}
+		buttonType = {
+			name = "choose_moriya"
+			position = { x = @pre_choose_row_3 y = @pre_choose_col_0 }
+			quadTextureSprite = "GFX_btn_dropdown"
+			scale = 0.6
+			pdx_tooltip = choose_moriya_button_tt
+		}
+		instantTextboxType = {
+			name = "choose_moriya_tt"
+			position = { x = @pre_choose_row_3 y = 103 }
+			
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = choose_moriya_button_tt
+			format = center
+			maxWidth = 146
+		}
+		buttonType = {
+			name = "choose_chireiden"
+			position = { x = @pre_choose_row_4 y = @pre_choose_col_0 }
+			quadTextureSprite = "GFX_btn_dropdown"
+			scale = 0.6
+			pdx_tooltip = choose_chireiden_button_tt
+		}
+		instantTextboxType = {
+			name = "choose_chireiden_button_tt"
+			position = { x = @pre_choose_row_4 y = 103 }
+			
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = choose_chireiden_button_tt
+			format = center
+			maxWidth = 146
+		}
+		buttonType = {
+			name = "choose_hakugyokurou"
+			position = { x = @pre_choose_row_0 y = @pre_choose_col_1 }
+			quadTextureSprite = "GFX_btn_dropdown"
+			scale = 0.6
+			pdx_tooltip = choose_hakugyokurou_button_tt
+		}
+		instantTextboxType = {
+			name = "choose_hakugyokurou_button_tt"
+			position = { x = @pre_choose_row_0 y = 138 }
+			
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = choose_hakugyokurou_button_tt
+			format = center
+			maxWidth = 146
+		}
+		buttonType = {
+			name = "choose_eientei"
+			position = { x = @pre_choose_row_1 y = @pre_choose_col_1 }
+			quadTextureSprite = "GFX_btn_dropdown"
+			scale = 0.6
+			pdx_tooltip = choose_eientei_button_tt
+		}
+		instantTextboxType = {
+			name = "choose_eientei_button_tt"
+			position = { x = @pre_choose_row_1 y = 138 }
+			
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = choose_eientei_button_tt
+			format = center
+			maxWidth = 146
+		}
+		buttonType = {
+			name = "choose_hearnandrenko"
+			position = { x = @pre_choose_row_2 y = @pre_choose_col_1 }
+			quadTextureSprite = "GFX_btn_dropdown"
+			scale = 0.6
+			#pdx_tooltip = choose_eientei_button_tt
+		}
+		instantTextboxType = {
+			name = "choose_hearnandrenko_tt"
+			position = { x = @pre_choose_row_2 y = 138 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = choose_hearnandrenko_button_tt
+			format = center
+			maxWidth = 146
+		}
+		buttonType = {
+			name = "choose_kanjuden"
+			position = { x = @pre_choose_row_3 y = @pre_choose_col_1 }
+			quadTextureSprite = "GFX_btn_dropdown"
+			scale = 0.6
+			#pdx_tooltip = choose_eientei_button_tt
+		}
+		instantTextboxType = {
+			name = "choose_kanjuden_button_tt"
+			position = { x = @pre_choose_row_3 y = 138 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = choose_kanjuden_button_tt
+			format = center
+			maxWidth = 146
+		}
+		buttonType = {
+			name = "choose_other"
+			position = { x = @pre_choose_row_4 y = @pre_choose_col_1 }
+			quadTextureSprite = "GFX_btn_dropdown"
+			scale = 0.6
+			pdx_tooltip = choose_other_button_tt
+		}
+		instantTextboxType = {
+			name = "choose_other_button_tt"
+			position = { x = @pre_choose_row_4 y = 138 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = choose_other_button_tt
+			format = center
+			maxWidth = 146
+		}
+		# buttonType = {
+		# 	name = "next_button"
+		# 	position = { x = 884 y = 125 }
+		# 	scale = 0.5
+		# 	quadTextureSprite = "GFX_gsk_leaders_next_button"
+		# 	pdx_tooltip = next_button_tt
+		# }
+		# buttonType = {
+		# 	name = "pre_button_2"
+		# 	position = { x = 60 y = 350 }
+		# 	scale = 0.5
+		# 	quadTextureSprite = "GFX_gsk_leaders_pre_button"
+		# 	pdx_tooltip = pre_button_tt
+		# }
+		# buttonType = {
+		# 	name = "next_button_2"
+		# 	position = { x = 884 y = 350 }
+		# 	scale = 0.5
+		# 	quadTextureSprite = "GFX_gsk_leaders_next_button"
+		# 	pdx_tooltip = next_button_tt
+		# }
+
+
+
+		buttonType = { #红魔馆
+			name = "choose_remilia"
+			position = { x = @row_scale_15 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_remilia
+			pdx_tooltip = remilia_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_flandre"
+			position = { x = @row_scale_35 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_flandre
+			pdx_tooltip = flandre_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_sakuya"
+			position = { x = @row_scale_55 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_sakuya
+			pdx_tooltip = sakuya_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_cirno"
+			position = { x = @row_scale_75 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_cirno
+			pdx_tooltip = cirno_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_patchouli"
+			position = { x = @row_scale_15 y = @col_scale_45 }
+			quadTextureSprite = GFX_portrait_patchouli
+			pdx_tooltip = patchouli_name
+			scale = 0.6
+		}
+		buttonType = { #人间之里
+			name = "choose_keine"
+			position = { x = @row_scale_15 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_keine
+			pdx_tooltip = keine_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_akyuu"
+			position = { x = @row_scale_35 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_akyuu
+			pdx_tooltip = akyuu_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_kosuzu"
+			position = { x = @row_scale_55 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_kosuzu
+			pdx_tooltip = kosuzu_name
+			scale = 0.6
+		}
+		# buttonType = {
+		# 	name = "choose_patchouli"
+		# 	position = { x = @row_scale_6 y = @col_scale_2 }
+		# 	quadTextureSprite = GFX_portrait_patchouli
+		# 	pdx_tooltip = patchouli_name
+		# 	scale = 0.6
+		# }
+		# buttonType = {
+		# 	name = "choose_cirno"
+		# 	position = { x = @row_scale_75 y = @col_scale_2 }
+		# 	quadTextureSprite = GFX_portrait_cirno
+		# 	pdx_tooltip = cirno_name
+		# 	scale = 0.6
+		# }
+		buttonType = { #博丽
+			name = "choose_reimu"
+			position = { x = @row_scale_15 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_reimu
+			pdx_tooltip = reimu_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_marisa"
+			position = { x = @row_scale_35 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_marisa
+			pdx_tooltip = marisa_name
+			scale = 0.6
+		}
+		# buttonType = {
+		# 	name = "choose_sakuya"
+		# 	position = { x = @row_scale_45 y = @col_scale_2 }
+		# 	quadTextureSprite = GFX_portrait_sakuya
+		# 	pdx_tooltip = sakuya_name
+		# 	scale = 0.6
+		# }
+		# buttonType = {
+		# 	name = "choose_patchouli"
+		# 	position = { x = @row_scale_6 y = @col_scale_2 }
+		# 	quadTextureSprite = GFX_portrait_patchouli
+		# 	pdx_tooltip = patchouli_name
+		# 	scale = 0.6
+		# }
+		# buttonType = {
+		# 	name = "choose_cirno"
+		# 	position = { x = @row_scale_75 y = @col_scale_2 }
+		# 	quadTextureSprite = GFX_portrait_cirno
+		# 	pdx_tooltip = cirno_name
+		# 	scale = 0.6
+		# }
+		buttonType = { #守失
+			name = "choose_sanae"
+			position = { x = @row_scale_15 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_sanae
+			pdx_tooltip = sanae_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_kanako"
+			position = { x = @row_scale_35 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_kanako
+			pdx_tooltip = kanako_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_suwako"
+			position = { x = @row_scale_55 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_suwako
+			pdx_tooltip = suwako_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_aya"
+			position = { x = @row_scale_75 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_aya
+			pdx_tooltip = aya_name
+			scale = 0.6
+		}
+		# buttonType = {
+		# 	name = "choose_cirno"
+		# 	position = { x = @row_scale_75 y = @col_scale_2 }
+		# 	quadTextureSprite = GFX_portrait_cirno
+		# 	pdx_tooltip = cirno_name
+		# 	scale = 0.6
+		# }
+		buttonType = { #地灵殿
+			name = "choose_satori"
+			position = { x = @row_scale_15 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_satori_intel
+			pdx_tooltip = satori_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_koishi"
+			position = { x = @row_scale_35 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_koishi_intel
+			pdx_tooltip = koishi_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_kokoro"
+			position = { x = @row_scale_55 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_kokoro
+			pdx_tooltip = kokoro_name
+			scale = 0.6
+		}
+		# buttonType = {
+		# 	name = "choose_patchouli"
+		# 	position = { x = @row_scale_6 y = @col_scale_2 }
+		# 	quadTextureSprite = GFX_portrait_patchouli
+		# 	pdx_tooltip = patchouli_name
+		# 	scale = 0.6
+		# }
+		# buttonType = {
+		# 	name = "choose_cirno"
+		# 	position = { x = @row_scale_75 y = @col_scale_2 }
+		# 	quadTextureSprite = GFX_portrait_cirno
+		# 	pdx_tooltip = cirno_name
+		# 	scale = 0.6
+		# }
+		buttonType = { #白玉楼
+			name = "choose_youmu"
+			position = { x = @row_scale_15 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_youmu
+			pdx_tooltip = youmu_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_yuyuko"
+			position = { x = @row_scale_35 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_yuyuko
+			pdx_tooltip = yuyuko_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_yukari"
+			position = { x = @row_scale_55 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_yukari
+			pdx_tooltip = yukari_name
+			scale = 0.6
+		}
+		# buttonType = {
+		# 	name = "choose_patchouli"
+		# 	position = { x = @row_scale_6 y = @col_scale_2 }
+		# 	quadTextureSprite = GFX_portrait_patchouli
+		# 	pdx_tooltip = patchouli_name
+		# 	scale = 0.6
+		# }
+		# buttonType = {
+		# 	name = "choose_cirno"
+		# 	position = { x = @row_scale_75 y = @col_scale_2 }
+		# 	quadTextureSprite = GFX_portrait_cirno
+		# 	pdx_tooltip = cirno_name
+		# 	scale = 0.6
+		# }
+		buttonType = { #永远亭
+			name = "choose_tewi"
+			position = { x = @row_scale_15 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_tewi
+			pdx_tooltip = tewi_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_reisen"
+			position = { x = @row_scale_35 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_reisen
+			pdx_tooltip = reisen_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_kaguya"
+			position = { x = @row_scale_55 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_kaguya
+			pdx_tooltip = kaguya_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_mokou"
+			position = { x = @row_scale_75 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_mokou
+			pdx_tooltip = mokou_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_yagokoro"
+			position = { x = @row_scale_15 y = @col_scale_45 }
+			quadTextureSprite = GFX_portrait_yagokoro
+			pdx_tooltip = yagokoro_name
+			scale = 0.6
+		}
+		buttonType = { #其他
+			name = "choose_yuka"
+			position = { x = @row_scale_15 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_yuka
+			pdx_tooltip = yuka_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_tenshi"
+			position = { x = @row_scale_35 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_tenshi
+			pdx_tooltip = tenshi_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_kogasa"
+			position = { x = @row_scale_55 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_kogasa
+			pdx_tooltip = kogasa_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_shikieiki"
+			position = { x = @row_scale_75 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_shikieiki
+			pdx_tooltip = shikieiki_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_gsk_alice"
+			position = { x = @row_scale_15 y = @col_scale_45 }
+			quadTextureSprite = GFX_portrait_gsk_alice
+			pdx_tooltip = gsk_alice_name
+			scale = 0.6
+		}
+		buttonType = { #秘封
+			name = "choose_renko"
+			position = { x = @row_scale_15 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_renko
+			pdx_tooltip = renko_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_hearn"
+			position = { x = @row_scale_35 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_hearn
+			pdx_tooltip = hearn_name
+			scale = 0.6
+		}
+		buttonType = { #绀珠传
+			name = "choose_seiran"
+			position = { x = @row_scale_15 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_seiran
+			pdx_tooltip = seiran_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_ringo"
+			position = { x = @row_scale_35 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_ringo
+			pdx_tooltip = ringo_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_doremy"
+			position = { x = @row_scale_55 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_doremy
+			pdx_tooltip = doremy_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_sagume"
+			position = { x = @row_scale_75 y = @col_scale_2 }
+			quadTextureSprite = GFX_portrait_sagume
+			pdx_tooltip = sagume_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_clownpiece"
+			position = { x = @row_scale_15 y = @col_scale_45 }
+			quadTextureSprite = GFX_portrait_clownpiece
+			pdx_tooltip = clownpiece_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_junko"
+			position = { x = @row_scale_35 y = @col_scale_45 }
+			quadTextureSprite = GFX_portrait_junko
+			pdx_tooltip = junko_name
+			scale = 0.6
+		}
+		buttonType = {
+			name = "choose_hecatia"
+			position = { x = @row_scale_55 y = @col_scale_45 }
+			quadTextureSprite = GFX_portrait_hecatia
+			pdx_tooltip = hecatia_name
+			scale = 0.6
+		}
+
+
+		
+		iconType = {
+			name ="advisor_1_frame"
+			spriteType = "GFX_ascended_advisors_frame"
+			alwaystransparent = yes
+			position = { x = 118 y = 168 }
+			scale = 1.2
+		}
+		iconType = {
+			name ="advisor_2_frame"
+			spriteType = "GFX_ascended_advisors_frame"
+			alwaystransparent = yes
+			position = { x = 318 y = 168 }
+			scale = 1.2
+		}
+		iconType = {
+			name ="advisor_3_frame"
+			spriteType = "GFX_ascended_advisors_frame"
+			alwaystransparent = yes
+			position = { x = 518 y = 168 }
+			scale = 1.2
+		}
+		iconType = {
+			name ="advisor_4_frame"
+			spriteType = "GFX_ascended_advisors_frame"
+			alwaystransparent = yes
+			position = { x = 718 y = 168 }
+			scale = 1.2
+		}
+		iconType = {
+			name ="advisor_5_frame"
+			spriteType = "GFX_ascended_advisors_frame"
+			alwaystransparent = yes
+			position = { x = 118 y = 418 }
+			scale = 1.2
+		}
+		iconType = {
+			name ="advisor_6_frame"
+			spriteType = "GFX_ascended_advisors_frame"
+			alwaystransparent = yes
+			position = { x = 318 y = 418 }
+			scale = 1.2
+		}
+		iconType = {
+			name ="advisor_7_frame"
+			spriteType = "GFX_ascended_advisors_frame"
+			alwaystransparent = yes
+			position = { x = 518 y = 418 }
+			scale = 1.2
+		}
+		iconType = {
+			name ="advisor_8_frame"
+			spriteType = "GFX_ascended_advisors_frame"
+			alwaystransparent = yes
+			position = { x = 718 y = 418 }
+			scale = 1.2
+		}
+		iconType = {
+			name ="advisor_1_name"
+			spriteType = "GFX_ascended_advisor_name_box"
+			position = { x = 123 y = 328 }
+			scale = 1
+		}
+		buttonType = {
+			name ="advisor_1_trait"
+			spriteType = "GFX_choose_leader_button"
+			position = { x = 123 y = 353 }
+			scale = 1
+		}
+		iconType = {
+			name ="advisor_2_name"
+			spriteType = "GFX_ascended_advisor_name_box"
+			position = { x = 323 y = 328 }
+			scale = 1
+		}
+		buttonType = {
+			name ="advisor_2_trait"
+			spriteType = "GFX_choose_leader_button"
+			position = { x = 323 y = 353 }
+			scale = 1
+		}
+		iconType = {
+			name ="advisor_3_name"
+			spriteType = "GFX_ascended_advisor_name_box"
+			position = { x = 523 y = 328 }
+			scale = 1
+		}
+		buttonType = {
+			name ="advisor_3_trait"
+			spriteType = "GFX_choose_leader_button"
+			position = { x = 523 y = 353 }
+			scale = 1
+		}
+		iconType = {
+			name ="advisor_4_name"
+			spriteType = "GFX_ascended_advisor_name_box"
+			position = { x = 723 y = 328 }
+			scale = 1
+		}
+		buttonType = {
+			name ="advisor_4_trait"
+			spriteType = "GFX_choose_leader_button"
+			position = { x = 723 y = 353 }
+			scale = 1
+		}
+		iconType = {
+			name ="advisor_5_name"
+			spriteType = "GFX_ascended_advisor_name_box"
+			position = { x = 123 y = 578 }
+			scale = 1
+		}
+		buttonType = {
+			name ="advisor_5_trait"
+			spriteType = "GFX_choose_leader_button"
+			position = { x = 123 y = 603 }
+			scale = 1
+		}
+		iconType = {
+			name ="advisor_6_name"
+			spriteType = "GFX_ascended_advisor_name_box"
+			position = { x = 323 y = 578 }
+			scale = 1
+		}
+		buttonType = {
+			name ="advisor_6_trait"
+			spriteType = "GFX_choose_leader_button"
+			position = { x = 323 y = 603 }
+			scale = 1
+		}
+		iconType = {
+			name ="advisor_7_name"
+			spriteType = "GFX_ascended_advisor_name_box"
+			position = { x = 523 y = 578 }
+			scale = 1
+		}
+		buttonType = {
+			name ="advisor_7_trait"
+			spriteType = "GFX_choose_leader_button"
+			position = { x = 523 y = 603 }
+			scale = 1
+		}
+		iconType = {
+			name ="advisor_8_name"
+			spriteType = "GFX_ascended_advisor_name_box"
+			position = { x = 723 y = 578 }
+			scale = 1
+		}
+		buttonType = {
+			name ="advisor_8_trait"
+			spriteType = "GFX_choose_leader_button"
+			position = { x = 723 y = 603 }
+			scale = 1
+		}
+#名字
+	#红魔馆名字	
+		instantTextboxType = {
+			name = "remilia_name"
+			position = { x = 122 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = remilia_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "flandre_name"
+			position = { x = 322 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = flandre_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "sakuya_name"
+			position = { x = 522 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = sakuya_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "cirno_name"
+			position = { x = 722 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = cirno_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "patchouli_name"
+			position = { x = 122 y = 580 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = patchouli_name
+			format = center
+			maxWidth = 146
+		}
+	#人里名字
+		instantTextboxType = {
+			name = "keine_name"
+			position = { x = 122 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = keine_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "akyuu_name"
+			position = { x = 322 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = akyuu_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "kosuzu_name"
+			position = { x = 522 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = kosuzu_name
+			format = center
+			maxWidth = 146
+		}
+	#博丽名字
+		instantTextboxType = {
+			name = "reimu_name"
+			position = { x = 122 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = reimu_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "marisa_name"
+			position = { x = 322 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = marisa_name
+			format = center
+			maxWidth = 146
+		}
+	#守失名字
+		instantTextboxType = {
+			name = "sanae_name"
+			position = { x = 122 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = sanae_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "kanako_name"
+			position = { x = 322 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = kanako_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "suwako_name"
+			position = { x = 522 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = suwako_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "aya_name"
+			position = { x = 722 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = aya_name
+			format = center
+			maxWidth = 146
+		}
+	#地灵殿名字
+		instantTextboxType = {
+			name = "satori_name"
+			position = { x = 122 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = satori_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "koishi_name"
+			position = { x = 322 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = koishi_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "kokoro_name"
+			position = { x = 522 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = kokoro_name
+			format = center
+			maxWidth = 146
+		}
+	#白玉楼名字
+		instantTextboxType = {
+			name = "youmu_name"
+			position = { x = 122 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = youmu_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "yuyuko_name"
+			position = { x = 322 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = yuyuko_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "yukari_name"
+			position = { x = 522 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = yukari_name
+			format = center
+			maxWidth = 146
+		}
+	#永远亭名字
+		instantTextboxType = {
+			name = "tewi_name"
+			position = { x = 122 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = tewi_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "reisen_name"
+			position = { x = 322 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = reisen_name_s
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "kaguya_name"
+			position = { x = 522 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = kaguya_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "mokou_name"
+			position = { x = 722 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = mokou_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "yagokoro_name"
+			position = { x = 122 y = 580 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = yagokoro_name
+			format = center
+			maxWidth = 146
+		}
+	#秘封名字
+		instantTextboxType = {
+			name = "renko_name"
+			position = { x = 122 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = renko_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "hearn_name"
+			position = { x = 322 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = hearn_name
+			format = center
+			maxWidth = 146
+		}
+	#永远亭名字
+		instantTextboxType = {
+			name = "seiran_name"
+			position = { x = 122 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = seiran_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "ringo_name"
+			position = { x = 322 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = ringo_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "doremy_name"
+			position = { x = 522 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = doremy_name_s
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "sagume_name"
+			position = { x = 722 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = sagume_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "clownpiece_name"
+			position = { x = 122 y = 580 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = clownpiece_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "junko_name"
+			position = { x = 322 y = 580 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = junko_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "hecatia_name"
+			position = { x = 522 y = 580 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = hecatia_name_s
+			format = center
+			maxWidth = 146
+		}
+	#其他名字
+		instantTextboxType = {
+			name = "yuka_name"
+			position = { x = 122 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = yuka_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "tenshi_name"
+			position = { x = 322 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = tenshi_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "kogasa_name"
+			position = { x = 522 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = kogasa_name
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "shikieiki_name"
+			position = { x = 722 y = 330 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = shikieiki_name_s
+			format = center
+			maxWidth = 146
+		}
+		instantTextboxType = {
+			name = "gsk_alice_name"
+			position = { x = 122 y = 580 }
+			orientation = UPPER_LEFT
+			font = "hoi_18mbs"
+			alwaystransparent = yes
+			text = gsk_alice_name_s
+			format = center
+			maxWidth = 146
+		}
+
+		buttonType = {
+			name = "choose_leader_index"
+			orientation = center
+			position = { x = -190 y = 280 }
+			quadTextureSprite = "GFX_btn_blue"
+			scale = 1.8
+			pdx_tooltip = choose_leader_index_d
+		}
+		instantTextboxType = {
+			name = "choose_leader_index_tt"
+			position = { x = 318 y = 700 }
+			orientation = UPPER_LEFT
+			font = "hoi_24header"
+			alwaystransparent = yes
+			text = "[choose_leader_index]"
+			format = center
+			maxWidth = 397
+		}
+		
+		buttonType = {
+			name = "close_button"
+			#position = { x = -46 y = 14 }
+			quadTextureSprite = "GFX_closebutton"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}

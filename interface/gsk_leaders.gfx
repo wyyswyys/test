@@ -1,0 +1,158 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_portrait_remilia"
+		texturefile = "gfx/leaders/gsk_leader_remilia.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_sakuya"
+		texturefile = "gfx/leaders/gsk_leader_sakuya.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_keine"
+		texturefile = "gfx/leaders/gsk_leader_keine.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_akyuu"
+		texturefile = "gfx/leaders/gsk_leader_akyuu.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_reimu"
+		texturefile = "gfx/leaders/gsk_leader_reimu.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_marisa"
+		texturefile = "gfx/leaders/gsk_leader_marisa.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_gsk_alice"
+		texturefile = "gfx/leaders/gsk_leader_alice.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_patchouli"
+		texturefile = "gfx/leaders/gsk_leader_patchouli.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_sanae"
+		texturefile = "gfx/leaders/gsk_leader_sanae.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_kanako"
+		texturefile = "gfx/leaders/gsk_leader_kanako.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_suwako"
+		texturefile = "gfx/leaders/gsk_leader_suwako.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_youmu"
+		texturefile = "gfx/leaders/gsk_leader_youmu.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_yuyuko"
+		texturefile = "gfx/leaders/gsk_leader_yuyuko.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_tewi"
+		texturefile = "gfx/leaders/gsk_leader_tewi.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_reisen"
+		texturefile = "gfx/leaders/gsk_leader_reisen.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_kaguya"
+		texturefile = "gfx/leaders/gsk_leader_kaguya.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mokou"
+		texturefile = "gfx/leaders/gsk_leader_mokou.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_yagokoro"
+		texturefile = "gfx/leaders/gsk_leader_yagokoro.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_flandre"
+		texturefile = "gfx/leaders/gsk_leader_flandre.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_cirno"
+		texturefile = "gfx/leaders/gsk_leader_cirno.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_aya"
+		texturefile = "gfx/leaders/gsk_leader_aya.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_yuka"
+		texturefile = "gfx/leaders/gsk_leader_yuka.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_tenshi"
+		texturefile = "gfx/leaders/gsk_leader_tenshi.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_yukari"
+		texturefile = "gfx/leaders/gsk_leader_yukari.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_kokoro"
+		texturefile = "gfx/leaders/gsk_leader_kokoro.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_kogasa"
+		texturefile = "gfx/leaders/gsk_leader_kogasa.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_shikieiki"
+		texturefile = "gfx/leaders/gsk_leader_shikieiki.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_kosuzu"
+		texturefile = "gfx/leaders/gsk_leader_kosuzu.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_satori_intel"
+		texturefile = "gfx/leaders/gsk_leader_satori.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_koishi_intel"
+		texturefile = "gfx/leaders/gsk_leader_koishi.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_renko"
+		texturefile = "gfx/leaders/gsk_leader_renko.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_hearn"
+		texturefile = "gfx/leaders/gsk_leader_hearn.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_seiran"
+		texturefile = "gfx/leaders/gsk_leader_seiran.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_ringo"
+		texturefile = "gfx/leaders/gsk_leader_ringo.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_doremy"
+		texturefile = "gfx/leaders/gsk_leader_doremy.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_sagume"
+		texturefile = "gfx/leaders/gsk_leader_sagume.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_clownpiece"
+		texturefile = "gfx/leaders/gsk_leader_clownpiece.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_junko"
+		texturefile = "gfx/leaders/gsk_leader_junko.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_hecatia"
+		texturefile = "gfx/leaders/gsk_leader_hecatia.dds"
+	}
+}

@@ -1,0 +1,106 @@
+spriteTypes = {
+	spriteType = {
+		name = "gsk_main_event.1.p"
+		texturefile = "gfx/event_pictures/gsk_main.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.2.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.2.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.21.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.21.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.30.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.30.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.32.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.32.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.33.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.33.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.34.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.34.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.35.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.35.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.40.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.40.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.50.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.50.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.51.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.51.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.52.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.52.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.60.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.60.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.70.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.70.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.72.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.72.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.71.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.71.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.80.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.80.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.90.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.90.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.91.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.91.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.96.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.96.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.121.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.121.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.122.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.122.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.100.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.100.png"
+	}
+	spriteType = {
+		name = "gsk_main_event.110.p"
+		texturefile = "gfx/event_pictures/gsk_main_event.110.png"
+	}
+	spriteType = {
+		name = "gsk_hire_event.101.p"
+		texturefile = "gfx/event_pictures/gsk_hire_event.101.png"
+	}
+	spriteType = {
+		name = "gsk_news_event.30.p"
+		texturefile = "gfx/event_pictures/gsk_news_event.30.png"
+	}
+}

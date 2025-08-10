@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_intelligence_agency_logo_gsk"
+		texturefile = "gfx/intelligence/goal_generic_intelligence_exchange.dds"
+	}
+}

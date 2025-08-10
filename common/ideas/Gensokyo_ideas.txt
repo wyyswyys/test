@@ -1,0 +1,364 @@
+ideas = {
+	industrial_concern = {
+
+		designer = yes
+
+		gsk_industrial_concern = { #工会
+			picture = gsk_industrial_concern
+			allowed = {
+
+			}
+			visible = {
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = ringo_is_recruit_flag
+				has_country_flag = seiran_is_recruit_flag
+				has_country_flag = reisen_is_recruit_flag
+			}
+			research_bonus = {
+			}
+			
+			traits = { gsk_idea_industrial_concern }
+		}
+		
+		gsk_tech = { #研究所
+			picture = gsk_tech
+			allowed = {
+
+			}
+			visible = {
+				has_country_flag = gsk_system_is_enable_flag
+			}
+			available = {
+				has_country_flag = kanjuden_event_completed
+			}
+			research_bonus = {
+			}
+			on_add = {
+				add_research_slot = 1
+			}
+			on_remove = {
+				add_research_slot = -1
+			}
+			
+			traits = { gsk_idea_research_institute }
+		}
+	}
+	
+	country = {
+		gsk_embodiment_idea0 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				special_project_speed_factor = 0.1
+				resistance_target = -0.1
+				subversive_activites_upkeep = -0.1
+				resource_trade_cost_bonus_per_factory = 1
+			}
+		}
+		gsk_embodiment_idea1 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				special_project_speed_factor = 0.3
+				resistance_target = -0.2
+				subversive_activites_upkeep = -0.3
+				resource_trade_cost_bonus_per_factory = 2
+			}
+		}
+		gsk_embodiment_idea2 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				special_project_speed_factor = 0.5
+				resistance_target = -0.3
+				subversive_activites_upkeep = -0.5
+				intelligence_agency_defense = 1
+				resource_trade_cost_bonus_per_factory = 2
+			}
+		}
+		gsk_sakuya_fix_idea0 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				industry_free_repair_factor = 10
+				industry_repair_factor = 5
+				war_support_weekly = 0.03
+			}
+		}
+		gsk_write_history_idea0 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				monthly_population = 0.1
+				forced_surrender_limit = 0.15
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+			}
+		}
+		gsk_moriya_shrine_idea0 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				global_building_slots_factor = 0.25
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		gsk_moriya_shrine_idea1 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				air_maximum_speed_factor = 0.1
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		gsk_moriya_shrine_idea2 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				global_building_slots_factor = 0.25
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.2
+				air_maximum_speed_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+	}
+	hidden_ideas = {
+		has_gsk_leader_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				political_power_gain = 0.3
+				command_power_gain = 0.5
+				surrender_limit = 0.3
+				stability_factor = 0.35
+				war_support_factor = 0.35
+				navy_org_factor = 0.05
+				army_org_factor = 0.05
+				production_speed_buildings_factor = 0.025
+				research_speed_factor = 0.025
+			}
+		}
+		gsk_embodiment_idea_sub0 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = yes
+			}
+			modifier = {
+				#overlord_trade_cost_factor = -0.1
+				cic_to_overlord_factor = 0.05
+				mic_to_overlord_factor = 0.05
+			}
+		}
+		gsk_embodiment_idea_sub1 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = yes
+			}
+			modifier = {
+				#overlord_trade_cost_factor = -0.15
+				cic_to_overlord_factor = 0.15
+				mic_to_overlord_factor = 0.15
+			}
+		}
+		gsk_embodiment_idea_sub2 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = yes
+			}
+			modifier = {
+				#overlord_trade_cost_factor = -0.2
+				cic_to_overlord_factor = 0.25
+				mic_to_overlord_factor = 0.25
+			}
+		}
+		gsk_kaguya_design_bureau_idae0 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.5
+			}
+		}
+		gsk_kaguya_design_bureau_idae1 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				political_power_cost = 1.5
+				consumer_goods_factor = 1
+			}
+		}
+		gsk_kaguya_design_bureau_idae2 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				political_power_cost = 2
+				consumer_goods_factor = 1.5
+			}
+		}
+		gsk_kaguya_design_bureau_idae3 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				political_power_cost = 2.5
+				consumer_goods_factor = 2
+			}
+		}
+		gsk_kaguya_design_bureau_idae4 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				political_power_cost = 3
+				consumer_goods_factor = 2.5
+			}
+		}
+		gsk_kaguya_design_bureau_idae5 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				political_power_cost = 3.5
+				consumer_goods_factor = 3
+			}
+		}
+		gsk_human_village_quest1_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				send_volunteer_size = 20
+				send_volunteers_tension = -1
+			}
+		}
+		gsk_human_village_quest1_idea0 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				send_volunteer_size = 3
+			}
+		}
+		gsk_human_village_quest1_idea1 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				send_volunteer_size = 6
+				send_volunteers_tension = -0.1
+			}
+		}
+		gsk_human_village_quest1_idea2 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				send_volunteer_size = 9
+				send_volunteers_tension = -0.2
+			}
+		}
+		gsk_human_village_quest1_idea3 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				send_volunteer_size = 12
+				send_volunteers_tension = -0.3
+			}
+		}
+		gsk_main_event_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				operative_slot = 1
+			}
+		}
+	}
+}

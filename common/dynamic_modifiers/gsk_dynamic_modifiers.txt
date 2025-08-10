@@ -1,0 +1,13 @@
+gsk_dym_add_contact = {
+	enable = { always = yes }
+	civilian_factory_use = 3
+	political_power_gain = -0.5
+}
+gsk_dym_add_fumo = {
+	enable = { always = yes }
+	civilian_factory_use = 10
+}
+gsk_dym_sanae_land_cruiser = {
+	enable = { always = yes }
+	sp_land_land_cruiser_speed_factor = 2
+}

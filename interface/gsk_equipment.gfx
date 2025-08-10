@@ -1,0 +1,19 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_gsk_equipment_frog_medium"
+		texturefile = "gfx/technologies/gsk_equipment_frog.png"
+	}
+	SpriteType = {
+		name = "GFX_gsk_equipment_houraisan_med_medium"
+		texturefile = "gfx/technologies/gsk_equipment_houraisan_med.png"
+	}
+	SpriteType = {
+		name = "GFX_military_industrial_organization_gsk_equipment_frog"
+		texturefile = "gfx/technologies/industrial_organizationgsk_equipment_frog.png"
+	}
+	SpriteType = {
+		name = "GFX_military_industrial_organization_gsk_equipment_houraisan_med"
+		texturefile = "gfx/technologies/industrial_organization_gsk_equipment_houraisan_med.png"
+	}
+}

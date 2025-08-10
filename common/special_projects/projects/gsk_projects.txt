@@ -1,0 +1,74 @@
+sp_gsk_fumo = {
+	specialization = specialization_land
+	icon = GFX_sp_gsk_fumo	### Automatically hooked-in since the GFX ID matches the project ID.
+	project_tags = sp_tag_bomb
+	ai_will_do = {
+		base = 0
+	}
+	allowed = {
+	}
+	available = {
+		FROM = {
+			has_country_flag = gsk_system_is_enable_flag
+		}
+	}
+	visible = {
+		FROM = {
+			is_ai = no
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+		# specialization_nuclear = 1
+		# specialization_naval = 1
+		# specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	project_output = {
+		country_effects = {
+			hidden_effect = {
+				set_country_flag = allow_creat_fumo_flag
+				set_variable = {
+					gsk_var_number_of_fumo = 1
+				}
+			}
+			custom_effect_tooltip = sp_gsk_fumo_tt
+		}
+	}
+	generic_prototype_rewards = {
+	}
+}
+
+# sp_houraisan_med = {
+# 	specialization = specialization_land
+# 	icon = GFX_sp_houraisan_med	### Automatically hooked-in since the GFX ID matches the project ID.
+# 	project_tags = sp_tag_gsk
+# 	ai_will_do = {
+# 		base = 0
+# 	}
+# 	allowed = {
+# 	}
+# 	available = {
+# 		FROM = {
+# 			has_country_flag = gsk_system_is_enable_flag
+# 		}
+# 	}
+# 	visible = {
+# 		FROM = {
+# 			is_ai = no
+# 		}
+# 	}
+# 	breakthrough_cost = {
+
+# 	}
+# 	prototype_time = 20
+# 	complexity = sp_complexity.small
+# 	project_output = {
+# 		country_effects = {
+# 			set_technology = {
+# 				gsk_equipment_houraisan_med_tech = 1
+# 			}
+# 		}
+# 	}
+# }

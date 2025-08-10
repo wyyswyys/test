@@ -1,0 +1,42 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_has_gsk_leader_idea"
+		texturefile = "gfx/country_idea/has_gsk_leader_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_sakuya_fix_idea0"
+		texturefile = "gfx/country_idea/gsk_sakuya_fix_idea0.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_embodiment_idea0"
+		texturefile = "gfx/country_idea/gsk_embodiment_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_embodiment_idea1"
+		texturefile = "gfx/country_idea/gsk_embodiment_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_embodiment_idea2"
+		texturefile = "gfx/country_idea/gsk_embodiment_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_write_history_idea0"
+		texturefile = "gfx/country_idea/gsk_write_history_idea0.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_moriya_shrine_idea0"
+		texturefile = "gfx/country_idea/gsk_moriya_shrine_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_moriya_shrine_idea1"
+		texturefile = "gfx/country_idea/gsk_moriya_shrine_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_moriya_shrine_idea2"
+		texturefile = "gfx/country_idea/gsk_moriya_shrine_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gsk_aya_idea"
+		texturefile = "gfx/country_idea/gsk_aya_idea.png"
+	}
+}

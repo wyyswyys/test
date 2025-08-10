@@ -1,0 +1,71 @@
+add_namespace = gsk_leaders_event
+country_event = {
+	id = gsk_leaders_event.01
+	title = gsk_leaders_event.01.t
+	desc = gsk_leaders_event.01.d
+	picture = gsk_leaders_event.01.p
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {#next gsk_leaders_event.02
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = gsk_leaders_event.02
+	title = gsk_leaders_event.02.t
+	desc = gsk_leaders_event.02.d
+	picture = gsk_leaders_event.01.p
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {#pre gsk_leaders_event.01
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {#next gsk_leaders_event.03
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

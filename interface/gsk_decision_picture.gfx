@@ -1,0 +1,14 @@
+spriteTypes = {	
+	spriteType = {
+		name = "gsk_decision_bg"
+		textureFile = "gfx/gui/gsk_decision_bg.png"
+	}
+	spriteType = {
+		name = "gsk_decision_icon"
+		textureFile = "gfx/gui/THBWiki-LOGO.png"
+	}
+	# spriteType = {
+	# name = "GFX_gsk_help_button"
+	# textureFile = "gfx/"
+	# }
+}

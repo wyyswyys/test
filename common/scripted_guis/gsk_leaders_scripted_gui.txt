@@ -1,0 +1,35 @@
+scripted_gui = {
+
+	gsk_change_leaders_gui = {
+		context_type = player_context
+		window_name = "gsk_leaders_ui"
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = gsk_allow_change_leader_flag
+		}
+
+		effects = {
+			gsk_change_leader_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = gsk_change_leader_flag } }
+					set_country_flag = gsk_change_leader_flag
+				}
+				else = { clr_country_flag = gsk_change_leader_flag }
+			}
+		}
+
+		triggers = {
+			gsk_leader_portrait_visible = { ROOT = { has_country_flag = gsk_change_leader_flag } }
+			gsk_leader_name_visible = { ROOT = { has_country_flag = gsk_change_leader_flag } }
+			gsk_leader_frame_visible = { ROOT = { has_country_flag = gsk_change_leader_flag } }
+		}
+
+		properties = {
+			gsk_leader_portrait = {
+				image = "[GFX_gsk_leader_portrait]"
+			}
+		}
+	}
+	
+}
+

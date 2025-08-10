@@ -1,0 +1,21 @@
+spriteTypes = {	
+
+	spriteType = { 
+	  name = "GFX_unit_gsk_infantry_frog_icon_medium"	
+	  textureFile = "gfx/technologies/gsk_infantry_frog_icon.dds"
+	  noOfFrames = 2
+	}
+ 
+	spriteType = { 
+	  name = "GFX_unit_gsk_infantry_frog_icon_medium_white"
+	  textureFile = "gfx/technologies/gsk_infantry_frog_icon_white.dds" 
+	  noOfFrames = 2
+	}
+ 
+	spriteType = {
+	  name = "GFX_unit_gsk_infantry_frog_icon_small"
+	  texturefile = "gfx/technologies/gsk_infantry_frog_icon_small.dds"
+	  legacy_lazy_load = no
+	  noOfFrames = 2
+	}
+}
